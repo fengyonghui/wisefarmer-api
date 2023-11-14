@@ -5,8 +5,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.constant.CacheConstant;
-import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.common.system.vo.LoginUser;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import org.jeecg.modules.demo.test.entity.JeecgDemo;
 import org.jeecg.modules.demo.test.mapper.JeecgDemoMapper;
 import org.jeecg.modules.demo.test.service.IJeecgDemoService;
@@ -30,7 +30,7 @@ import java.util.List;
 public class JeecgDemoServiceImpl extends ServiceImpl<JeecgDemoMapper, JeecgDemo> implements IJeecgDemoService {
 	@Autowired
 	JeecgDemoMapper jeecgDemoMapper;
-	
+
 	/**
 	 * 事务控制在service层面
 	 * 加上注解：@Transactional，声明的方法就是一个独立的事务（有异常DB操作全部回滚）
@@ -42,14 +42,14 @@ public class JeecgDemoServiceImpl extends ServiceImpl<JeecgDemoMapper, JeecgDemo
 		pp.setAge(1111);
 		pp.setName("测试事务  小白兔 1");
 		jeecgDemoMapper.insert(pp);
-		
+
 		JeecgDemo pp2 = new JeecgDemo();
 		pp2.setAge(2222);
 		pp2.setName("测试事务  小白兔 2");
 		jeecgDemoMapper.insert(pp2);
         //自定义异常
 		Integer.parseInt("hello");
-		
+
 		JeecgDemo pp3 = new JeecgDemo();
 		pp3.setAge(3333);
 		pp3.setName("测试事务  小白兔 3");

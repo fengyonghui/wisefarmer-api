@@ -18,7 +18,7 @@
 		<developerConnection>http://guojusoft.com</developerConnection>
 		<url>http://www.jeecg.com/vip</url>
 	</scm>
-	
+
   	<parent>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-parent</artifactId>
@@ -77,9 +77,9 @@
 	</properties>
 
 	<modules>
-        <module>jeecg-boot-base-core</module>
+        <module>base-core</module>
         <module>jeecg-module-demo</module>
-        <module>jeecg-module-system</module>
+        <module>system</module>
     </modules>
 
 	<repositories>
@@ -183,28 +183,28 @@
 			<!-- jeecg core -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-base-core</artifactId>
+				<artifactId>base-core</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!-- system 单体 api -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-system-local-api</artifactId>
+				<artifactId>system-local-api</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!-- system 微服务 api -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-system-cloud-api</artifactId>
+				<artifactId>system-cloud-api</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 
             <!--微服务启动依赖-->
-            <dependency>
-                <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-boot-starter-cloud</artifactId>
-                <version>${jeecgboot.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.jeecgframework.boot</groupId>-->
+<!--                <artifactId>jeecg-boot-starter-cloud</artifactId>-->
+<!--                <version>${jeecgboot.version}</version>-->
+<!--            </dependency>-->
 			<!--xxl-job定时任务-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
@@ -240,11 +240,11 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<dependency>
-				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>hibernate-re</artifactId>
-				<version>3.5.3</version>
-			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>org.jeecgframework.boot</groupId>-->
+<!--				<artifactId>hibernate-re</artifactId>-->
+<!--				<version>3.5.3</version>-->
+<!--			</dependency>-->
 
 			<!--mongon db-->
 			<dependency>
@@ -427,7 +427,7 @@
 			<url>http://maven.jeecg.com:8090/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+
     <!-- 环境 -->
     <profiles>
         <!-- 开发 -->

@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>org.jeecgframework.boot</groupId>
-            <artifactId>jeecg-boot-base-core</artifactId>
+            <artifactId>boot-base-core</artifactId>
         </dependency>
     </dependencies>
 

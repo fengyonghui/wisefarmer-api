@@ -1,12 +1,11 @@
 package org.jeecg.modules.demo.test.controller;
 
-import io.lettuce.core.dynamic.annotation.Param;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.aspect.annotation.AutoLog;
-import org.jeecg.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
 import org.jeecg.modules.demo.test.entity.JeecgDemo;
 import org.jeecg.modules.demo.test.service.IJeecgDemoService;
 import org.jeecg.modules.demo.test.service.IJeecgDynamicDataService;

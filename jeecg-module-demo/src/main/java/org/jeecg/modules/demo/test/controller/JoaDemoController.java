@@ -10,9 +10,9 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.common.util.oConvertUtils;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.jeecg.modules.demo.test.entity.JoaDemo;
 import org.jeecg.modules.demo.test.service.IJoaDemoService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
@@ -53,7 +53,7 @@ import lombok.extern.slf4j.Slf4j;
 public class JoaDemoController {
 	@Autowired
 	private IJoaDemoService joaDemoService;
-	
+
 	/**
 	  * 分页列表查询
 	 * @param joaDemo
@@ -75,7 +75,7 @@ public class JoaDemoController {
 		result.setResult(pageList);
 		return result;
 	}
-	
+
 	/**
 	  *   添加
 	 * @param joaDemo
@@ -93,7 +93,7 @@ public class JoaDemoController {
 		}
 		return result;
 	}
-	
+
 	/**
 	  *  编辑
 	 * @param joaDemo
@@ -112,10 +112,10 @@ public class JoaDemoController {
 				result.success("修改成功!");
 			}
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
 	  *   通过id删除
 	 * @param id
@@ -133,10 +133,10 @@ public class JoaDemoController {
 				result.success("删除成功!");
 			}
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
 	  *  批量删除
 	 * @param ids
@@ -153,7 +153,7 @@ public class JoaDemoController {
 		}
 		return result;
 	}
-	
+
 	/**
 	  * 通过id查询
 	 * @param id

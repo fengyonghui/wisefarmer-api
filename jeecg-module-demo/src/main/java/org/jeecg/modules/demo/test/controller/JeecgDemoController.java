@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -14,15 +12,15 @@ import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.mgt.DefaultSecurityManager;
-import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.aspect.annotation.AutoLog;
-import org.jeecg.common.aspect.annotation.PermissionData;
-import org.jeecg.common.constant.CommonConstant;
-import org.jeecg.common.system.base.controller.JeecgController;
-import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.common.util.DateUtils;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
+import cn.wisefarmer.base.core.common.aspect.annotation.PermissionData;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.base.core.common.util.DateUtils;
 import org.jeecg.common.util.RedisUtil;
-import org.jeecg.common.util.UUIDGenerator;
+import cn.wisefarmer.base.core.common.util.UUIDGenerator;
 import org.jeecg.modules.demo.test.entity.JeecgDemo;
 import org.jeecg.modules.demo.test.service.IJeecgDemoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -344,7 +342,7 @@ public class JeecgDemoController extends JeecgController<JeecgDemo, IJeecgDemoSe
         IPage<JSONObject> objectPage = queryDataPage(data, pageNo, pageSize);
         return Result.OK(objectPage);
     }
-    
+
     @PostMapping("/oneNative/add")
     public Result<String> oneNativeAdd(@RequestBody JSONObject jsonObject){
         Object oneNative = redisUtil.get("one-native");
@@ -360,7 +358,7 @@ public class JeecgDemoController extends JeecgController<JeecgDemo, IJeecgDemoSe
         redisUtil.set("one-native",nativeObject);
         return Result.OK("添加成功");
     }
-    
+
     @PutMapping("/oneNative/edit")
     public Result<String> oneNativeEdit(@RequestBody JSONObject jsonObject){
         JSONObject oneNative = (JSONObject)redisUtil.get("one-native");
@@ -383,7 +381,7 @@ public class JeecgDemoController extends JeecgController<JeecgDemo, IJeecgDemoSe
         }
         return Result.OK("删除成功");
     }
-    
+
     /**
      * 获取redis对应id的数据
      * @param data
@@ -482,7 +480,7 @@ public class JeecgDemoController extends JeecgController<JeecgDemo, IJeecgDemoSe
         // https://blog.csdn.net/Japhet_jiu/article/details/131177210
         DefaultSecurityManager securityManager = new DefaultSecurityManager();
         SecurityUtils.setSecurityManager(securityManager);
-        
+
         return Mono.just("测试");
     }
 
