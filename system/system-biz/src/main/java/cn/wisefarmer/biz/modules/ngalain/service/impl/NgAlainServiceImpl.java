@@ -19,7 +19,7 @@
 //
 ///**
 // * @Description: NgAlainServiceImpl 实现类
-// * @author: jeecg-boot
+// * @author: wisefarmer
 // */
 //@Service("ngAlainService")
 //public class NgAlainServiceImpl implements NgAlainService {

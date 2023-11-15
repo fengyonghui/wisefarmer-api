@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * @Description: 编码校验规则
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2020-02-04
  * @Version: V1.0
  */

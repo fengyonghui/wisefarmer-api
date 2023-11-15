@@ -38,7 +38,7 @@ spring:
     #Sentinel配置
     sentinel:
       transport:
-        dashboard: jeecg-boot-sentinel:9000
+        dashboard: wisefarmer-sentinel:9000
       # 支持链路限流
       web-context-unify: false
       filter:

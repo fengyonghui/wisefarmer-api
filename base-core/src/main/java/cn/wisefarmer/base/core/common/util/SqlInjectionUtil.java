@@ -1,9 +1,9 @@
 package cn.wisefarmer.base.core.common.util;
 
+import cn.hutool.core.util.ReUtil;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.exception.JeecgSqlInjectionException;
-import cn.hutool.core.util.ReUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
@@ -85,7 +85,7 @@ public class SqlInjectionUtil {
 		value = value.toLowerCase().trim();
 
 		// 二、SQL注入检测存在绕过风险 (普通文本校验)
-		//https://gitee.com/jeecg/jeecg-boot/issues/I4NZGE
+		//https://gitee.com/jeecg/wisefarmer/issues/I4NZGE
 		String[] xssArr = XSS_STR.split("\\|");
 		for (int i = 0; i < xssArr.length; i++) {
 			if (value.indexOf(xssArr[i]) > -1) {

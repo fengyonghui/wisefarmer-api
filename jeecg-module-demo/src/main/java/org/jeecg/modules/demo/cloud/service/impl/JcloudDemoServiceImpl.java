@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @Description: JcloudDemoServiceImpl实现类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Service
 public class JcloudDemoServiceImpl implements JcloudDemoService {

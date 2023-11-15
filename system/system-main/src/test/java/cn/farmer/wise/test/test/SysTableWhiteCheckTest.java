@@ -1,9 +1,9 @@
 package cn.farmer.wise.test.test;
 
-import cn.wisefarmer.JeecgSystemApplication;
-import cn.wisefarmer.local.api.ISysBaseAPI;
+import cn.wisefarmer.WisefarmerApplication;
 import cn.wisefarmer.base.core.config.JeecgBaseConfig;
 import cn.wisefarmer.base.core.config.firewall.SqlInjection.IDictTableWhiteListHandler;
+import cn.wisefarmer.local.api.ISysBaseAPI;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @Author: sunjianlei
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = JeecgSystemApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = WisefarmerApplication.class)
 public class SysTableWhiteCheckTest {
 
     @Autowired

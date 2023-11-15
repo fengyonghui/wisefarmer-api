@@ -2,7 +2,8 @@ package cn.wisefarmer.biz.modules.monitor.exception;
 
 /**
  * Redis 连接异常
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public class RedisConnectException extends Exception {
 

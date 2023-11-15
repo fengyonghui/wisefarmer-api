@@ -1,14 +1,14 @@
 package cn.wisefarmer.biz.modules.oss.service;
 
-import java.io.IOException;
-
 import cn.wisefarmer.biz.modules.oss.entity.OssFile;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+
 /**
  * @Description: OOS云存储service接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface IOssFileService extends IService<OssFile> {
 

@@ -2,7 +2,8 @@ package cn.wisefarmer.base.core.common.constant;
 
 /**
  * VXESocket 常量
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public class VxeSocketConst {
 

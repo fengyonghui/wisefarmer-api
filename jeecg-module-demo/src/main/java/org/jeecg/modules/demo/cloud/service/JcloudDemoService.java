@@ -2,7 +2,7 @@ package org.jeecg.modules.demo.cloud.service;
 
 /**
  * @Description: JcloudDemoService接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface JcloudDemoService {
 

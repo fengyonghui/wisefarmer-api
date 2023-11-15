@@ -1,32 +1,30 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import java.util.Arrays;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
 import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
 import cn.wisefarmer.biz.modules.system.entity.SysRoleIndex;
 import cn.wisefarmer.biz.modules.system.service.ISysRoleIndexService;
-
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
-
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
 
 /**
  * @Description: 角色首页配置
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2022-03-25
  * @Version: V1.0
  */

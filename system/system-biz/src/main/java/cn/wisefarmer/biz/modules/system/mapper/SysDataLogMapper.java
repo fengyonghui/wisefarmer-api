@@ -1,13 +1,12 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
 import cn.wisefarmer.biz.modules.system.entity.SysDataLog;
-import org.apache.ibatis.annotations.Param;
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @Description: 系统数据日志Mapper接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface SysDataLogMapper extends BaseMapper<SysDataLog>{
 	/**

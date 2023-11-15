@@ -7,8 +7,8 @@ import java.util.List;
 
 /**
  * @Description: 第三方配置表
- * @Author: jeecg-boot
- * @Date:   2023-02-03
+ * @Author: wisefarmer
+ * @Date: 2023-02-03
  * @Version: V1.0
  */
 public interface ISysThirdAppConfigService extends IService<SysThirdAppConfig>{

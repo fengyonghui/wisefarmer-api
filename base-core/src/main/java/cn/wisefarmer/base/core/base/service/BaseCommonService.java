@@ -5,7 +5,8 @@ import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 
 /**
  * common接口
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public interface BaseCommonService {
 

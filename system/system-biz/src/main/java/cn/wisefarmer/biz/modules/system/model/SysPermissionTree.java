@@ -1,14 +1,15 @@
 package cn.wisefarmer.biz.modules.system.model;
 
+import cn.wisefarmer.biz.modules.system.entity.SysPermission;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import cn.wisefarmer.biz.modules.system.entity.SysPermission;
 
 /**
  * @Description: 菜单树，封装树结构
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public class SysPermissionTree implements Serializable {
 

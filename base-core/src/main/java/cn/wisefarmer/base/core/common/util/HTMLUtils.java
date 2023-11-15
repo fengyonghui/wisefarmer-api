@@ -6,7 +6,8 @@ import org.springframework.web.util.HtmlUtils;
 
 /**
  * HTML 工具类
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  * @date: 2022/3/30 14:43
  */
 @SuppressWarnings("AlibabaClassNamingShouldBeCamel")

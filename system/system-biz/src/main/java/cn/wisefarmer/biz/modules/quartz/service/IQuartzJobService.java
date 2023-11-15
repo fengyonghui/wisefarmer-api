@@ -1,15 +1,14 @@
 package cn.wisefarmer.biz.modules.quartz.service;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.quartz.entity.QuartzJob;
+import com.baomidou.mybatisplus.extension.service.IService;
 import org.quartz.SchedulerException;
 
-import com.baomidou.mybatisplus.extension.service.IService;
+import java.util.List;
 
 /**
  * @Description: 定时任务在线管理
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-04-28
  * @Version: V1.1
  */

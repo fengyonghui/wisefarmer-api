@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: MyKeyPair
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class MyKeyPair {

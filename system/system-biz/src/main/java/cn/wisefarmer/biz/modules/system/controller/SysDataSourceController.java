@@ -1,19 +1,8 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
 import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
@@ -24,6 +13,17 @@ import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
 import cn.wisefarmer.biz.modules.system.entity.SysDataSource;
 import cn.wisefarmer.biz.modules.system.service.ISysDataSourceService;
 import cn.wisefarmer.biz.modules.system.util.SecurityUtil;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.jeecg.common.config.TenantContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -35,7 +35,7 @@ import java.util.List;
 
 /**
  * @Description: 多数据源管理
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-12-25
  * @Version: V1.0
  */

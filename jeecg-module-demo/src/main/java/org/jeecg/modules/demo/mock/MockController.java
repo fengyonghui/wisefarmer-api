@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * @Description: MockController
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @RestController
 @RequestMapping("/mock/api")
@@ -30,7 +30,7 @@ public class MockController {
 
 	/**
 	 * 通用json访问接口
-	 * 格式： http://localhost:8080/jeecg-boot/api/json/{filename}
+	 * 格式： http://localhost:8080/wisefarmer/api/json/{filename}
 	 * @param filename
 	 * @return
 	 */

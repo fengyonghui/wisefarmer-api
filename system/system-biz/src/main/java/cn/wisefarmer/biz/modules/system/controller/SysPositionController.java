@@ -1,17 +1,8 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
 import cn.hutool.core.util.RandomUtil;
-import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
 import cn.wisefarmer.base.core.common.system.vo.LoginUser;
@@ -23,6 +14,15 @@ import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.service.ISysPositionService;
 import cn.wisefarmer.biz.modules.system.service.ISysUserPositionService;
 import cn.wisefarmer.biz.modules.system.service.ISysUserService;
+import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.jeecg.common.config.TenantContext;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.ExportParams;
@@ -47,7 +47,7 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 职务表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-09-19
  * @Version: V1.0
  */

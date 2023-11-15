@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
-import cn.wisefarmer.biz.modules.system.entity.SysTableWhiteList;
-import cn.wisefarmer.biz.modules.system.mapper.SysTableWhiteListMapper;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.config.firewall.SqlInjection.IDictTableWhiteListHandler;
+import cn.wisefarmer.biz.modules.system.entity.SysTableWhiteList;
+import cn.wisefarmer.biz.modules.system.mapper.SysTableWhiteListMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysTableWhiteListService;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ import java.util.*;
 
 /**
  * @Description: 系统表白名单
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2023-09-12
  * @Version: V1.0
  */

@@ -14,8 +14,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * @Description: 第三方登录账号表
- * @Author: jeecg-boot
- * @Date:   2020-11-17
+ * @Author: wisefarmer
+ * @Date: 2020-11-17
  * @Version: V1.0
  */
 @Data

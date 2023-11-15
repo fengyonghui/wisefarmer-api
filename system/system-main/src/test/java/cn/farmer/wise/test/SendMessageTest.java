@@ -1,8 +1,6 @@
 package cn.farmer.wise.test;
 
-import com.alibaba.fastjson.JSONObject;
-import com.aliyuncs.exceptions.ClientException;
-import cn.wisefarmer.JeecgSystemApplication;
+import cn.wisefarmer.WisefarmerApplication;
 import cn.wisefarmer.base.core.common.api.dto.message.BusMessageDTO;
 import cn.wisefarmer.base.core.common.api.dto.message.BusTemplateMessageDTO;
 import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
@@ -12,8 +10,10 @@ import cn.wisefarmer.base.core.common.constant.enums.DySmsEnum;
 import cn.wisefarmer.base.core.common.constant.enums.EmailTemplateEnum;
 import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
 import cn.wisefarmer.base.core.common.constant.enums.SysAnnmentTypeEnum;
-import cn.wisefarmer.local.api.ISysBaseAPI;
 import cn.wisefarmer.base.core.common.util.DySmsHelper;
+import cn.wisefarmer.local.api.ISysBaseAPI;
+import com.alibaba.fastjson.JSONObject;
+import com.aliyuncs.exceptions.ClientException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ import java.util.Map;
  * @Author: lsq
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = JeecgSystemApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = WisefarmerApplication.class)
 public class SendMessageTest {
 
     @Autowired

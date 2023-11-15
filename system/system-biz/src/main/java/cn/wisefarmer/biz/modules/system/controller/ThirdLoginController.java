@@ -1,11 +1,25 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
+import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.util.RandomUtil;
+import cn.wisefarmer.base.core.base.service.BaseCommonService;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
+import cn.wisefarmer.base.core.common.system.util.JwtUtil;
 import cn.wisefarmer.base.core.common.util.CommonUtils;
 import cn.wisefarmer.base.core.common.util.PasswordUtil;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import cn.wisefarmer.biz.modules.system.entity.SysThirdAccount;
+import cn.wisefarmer.biz.modules.system.entity.SysThirdAppConfig;
+import cn.wisefarmer.biz.modules.system.entity.SysUser;
+import cn.wisefarmer.biz.modules.system.model.ThirdLoginModel;
+import cn.wisefarmer.biz.modules.system.service.ISysDictService;
+import cn.wisefarmer.biz.modules.system.service.ISysThirdAccountService;
+import cn.wisefarmer.biz.modules.system.service.ISysThirdAppConfigService;
+import cn.wisefarmer.biz.modules.system.service.ISysUserService;
 import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppDingtalkServiceImpl;
-import cn.hutool.core.collection.CollectionUtil;
-import cn.hutool.core.util.RandomUtil;
+import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppWechatEnterpriseServiceImpl;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.xkcoding.justauth.AuthRequestFactory;
@@ -15,21 +29,7 @@ import me.zhyd.oauth.model.AuthCallback;
 import me.zhyd.oauth.model.AuthResponse;
 import me.zhyd.oauth.request.AuthRequest;
 import me.zhyd.oauth.utils.AuthStateUtils;
-import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
-import cn.wisefarmer.base.core.common.system.util.JwtUtil;
-import org.jeecg.common.util.*;
-import cn.wisefarmer.base.core.base.service.BaseCommonService;
-import cn.wisefarmer.biz.modules.system.entity.SysThirdAccount;
-import cn.wisefarmer.biz.modules.system.entity.SysThirdAppConfig;
-import cn.wisefarmer.biz.modules.system.entity.SysUser;
-import cn.wisefarmer.biz.modules.system.model.ThirdLoginModel;
-import cn.wisefarmer.biz.modules.system.service.ISysDictService;
-import cn.wisefarmer.biz.modules.system.service.ISysThirdAccountService;
-import cn.wisefarmer.biz.modules.system.service.ISysThirdAppConfigService;
-import cn.wisefarmer.biz.modules.system.service.ISysUserService;
-import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppWechatEnterpriseServiceImpl;
+import org.jeecg.common.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -257,7 +257,7 @@ public class ThirdLoginController {
 
 		//用户登录信息
 		obj.put("userInfo", sysUser);
-		//获取字典缓存【解决 #jeecg-boot/issues/3998】
+		//获取字典缓存【解决 #wisefarmer/issues/3998】
 		obj.put("sysAllDictItems", sysDictService.queryAllDictItems());
 		//token 信息
 		obj.put("token", token);

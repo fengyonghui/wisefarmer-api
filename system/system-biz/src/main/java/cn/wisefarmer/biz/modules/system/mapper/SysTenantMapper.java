@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * @Description: 租户mapper接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface SysTenantMapper extends BaseMapper<SysTenant> {
 

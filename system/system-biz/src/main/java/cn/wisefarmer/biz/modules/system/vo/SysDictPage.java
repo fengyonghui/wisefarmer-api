@@ -1,7 +1,7 @@
 package cn.wisefarmer.biz.modules.system.vo;
 
-import lombok.Data;
 import cn.wisefarmer.biz.modules.system.entity.SysDictItem;
+import lombok.Data;
 import org.jeecgframework.poi.excel.annotation.Excel;
 import org.jeecgframework.poi.excel.annotation.ExcelCollection;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Description: 系统字典分页
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class SysDictPage {

@@ -1,11 +1,5 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import java.util.Arrays;
-import java.util.Date;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.shiro.SecurityUtils;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.DataBaseConstant;
@@ -17,30 +11,26 @@ import cn.wisefarmer.biz.modules.message.websocket.WebSocket;
 import cn.wisefarmer.biz.modules.system.entity.SysAnnouncementSend;
 import cn.wisefarmer.biz.modules.system.model.AnnouncementSendModel;
 import cn.wisefarmer.biz.modules.system.service.ISysAnnouncementSendService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
- /**
+import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
+import java.util.Date;
+
+/**
  * @Title: Controller
  * @Description: 用户通告阅读标记表
- * @Author: jeecg-boot
- * @Date:  2019-02-21
+ * @Author: wisefarmer
+ * @Date: 2019-02-21
  * @Version: V1.0
  */
 @RestController

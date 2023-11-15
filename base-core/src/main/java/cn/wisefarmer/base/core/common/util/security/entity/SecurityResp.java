@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @Description: SecurityResp
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class SecurityResp {

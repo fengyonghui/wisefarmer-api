@@ -2,8 +2,8 @@ package cn.wisefarmer.base.core.config.oss;
 
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.util.MinioUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Minio文件上传配置文件
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @Configuration

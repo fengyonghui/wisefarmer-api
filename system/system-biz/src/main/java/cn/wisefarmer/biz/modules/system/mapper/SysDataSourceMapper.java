@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * @Description: 多数据源管理
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-12-25
  * @Version: V1.0
  */

@@ -2,6 +2,8 @@ package cn.wisefarmer.base.core.common.util.oss;
 
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.util.CommonUtils;
+import cn.wisefarmer.base.core.common.util.filter.SsrfFileTypeFilter;
 import cn.wisefarmer.base.core.common.util.filter.StrAttackFilter;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import com.aliyun.oss.ClientConfiguration;
@@ -12,8 +14,6 @@ import com.aliyun.oss.model.OSSObject;
 import com.aliyun.oss.model.PutObjectResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.fileupload.FileItemStream;
-import cn.wisefarmer.base.core.common.util.CommonUtils;
-import cn.wisefarmer.base.core.common.util.filter.SsrfFileTypeFilter;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedInputStream;
@@ -26,7 +26,7 @@ import java.util.UUID;
 /**
  * @Description: 阿里云 oss 上传工具类(高依赖版)
  * @Date: 2019/5/10
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 public class OssBootUtil {

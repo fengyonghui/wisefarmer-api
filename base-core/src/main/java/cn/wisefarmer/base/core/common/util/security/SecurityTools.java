@@ -10,12 +10,13 @@ import cn.hutool.crypto.asymmetric.SignAlgorithm;
 import cn.hutool.crypto.symmetric.AES;
 import cn.wisefarmer.base.core.common.util.security.entity.*;
 import com.alibaba.fastjson.JSONObject;
+
 import javax.crypto.SecretKey;
 import java.security.KeyPair;
 
 /**
  * @Description: SecurityTools
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public class SecurityTools {
     public static final String ALGORITHM = "AES/ECB/PKCS5Padding";

@@ -1,10 +1,10 @@
 package cn.wisefarmer.biz.modules.monitor.controller;
 
-import com.alibaba.fastjson.JSONArray;
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.biz.modules.monitor.domain.RedisInfo;
 import cn.wisefarmer.biz.modules.monitor.service.RedisService;
+import com.alibaba.fastjson.JSONArray;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  * @Description: ActuatorRedisController
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 @RestController

@@ -1,23 +1,22 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.util.IpUtils;
+import cn.wisefarmer.base.core.common.util.SpringContextUtils;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRolePermission;
 import cn.wisefarmer.biz.modules.system.mapper.SysDepartRolePermissionMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysDepartRolePermissionService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import cn.wisefarmer.base.core.common.util.IpUtils;
-import cn.wisefarmer.base.core.common.util.SpringContextUtils;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import org.springframework.stereotype.Service;
-
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 /**
  * @Description: 部门角色权限
- * @Author: jeecg-boot
- * @Date:   2020-02-12
+ * @Author: wisefarmer
+ * @Date: 2020-02-12
  * @Version: V1.0
  */
 @Service

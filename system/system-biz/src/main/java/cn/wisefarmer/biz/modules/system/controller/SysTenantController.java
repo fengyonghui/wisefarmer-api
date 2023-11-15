@@ -1,17 +1,9 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
 import cn.hutool.core.util.RandomUtil;
-import cn.wisefarmer.biz.modules.system.entity.*;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
+import cn.wisefarmer.base.core.base.service.BaseCommonService;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.aspect.annotation.PermissionData;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
@@ -20,17 +12,21 @@ import cn.wisefarmer.base.core.common.util.PasswordUtil;
 import cn.wisefarmer.base.core.common.util.TokenUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
-import cn.wisefarmer.base.core.base.service.BaseCommonService;
-import cn.wisefarmer.biz.modules.system.service.ISysTenantPackService;
-import cn.wisefarmer.biz.modules.system.service.ISysTenantService;
-import cn.wisefarmer.biz.modules.system.service.ISysUserService;
-import cn.wisefarmer.biz.modules.system.service.ISysUserTenantService;
-import cn.wisefarmer.biz.modules.system.service.ISysDepartService;
+import cn.wisefarmer.biz.modules.system.entity.*;
+import cn.wisefarmer.biz.modules.system.service.*;
 import cn.wisefarmer.biz.modules.system.vo.SysUserTenantVo;
 import cn.wisefarmer.biz.modules.system.vo.tenant.TenantDepartAuthInfo;
 import cn.wisefarmer.biz.modules.system.vo.tenant.TenantPackModel;
 import cn.wisefarmer.biz.modules.system.vo.tenant.TenantPackUser;
 import cn.wisefarmer.biz.modules.system.vo.tenant.TenantPackUserCount;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.jeecg.common.config.TenantContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,7 +35,8 @@ import java.util.*;
 
 /**
  * 租户配置信息
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @RestController

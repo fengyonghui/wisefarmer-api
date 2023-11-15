@@ -8,8 +8,8 @@ import java.util.List;
 
 /**
  * @Description: 租户产品包
- * @Author: jeecg-boot
- * @Date:   2022-12-31
+ * @Author: wisefarmer
+ * @Date: 2022-12-31
  * @Version: V1.0
  */
 public interface ISysTenantPackService extends IService<SysTenantPack> {

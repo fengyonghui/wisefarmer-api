@@ -1,9 +1,9 @@
 package cn.wisefarmer.biz.modules.system.vo;
 
+import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @Description: VO 评论信息+文件信息
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2022-07-19
  * @Version: V1.0
  */

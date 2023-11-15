@@ -1,20 +1,20 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-
+import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUserPosition;
 import cn.wisefarmer.biz.modules.system.vo.SysUserPositionVo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Select;
-import cn.wisefarmer.biz.modules.system.entity.SysUser;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * @Description: 用户职位关系表
- * @Author: jeecg-boot
- * @Date:   2023-02-14
+ * @Author: wisefarmer
+ * @Date: 2023-02-14
  * @Version: V1.0
  */
 public interface SysUserPositionMapper extends BaseMapper<SysUserPosition> {

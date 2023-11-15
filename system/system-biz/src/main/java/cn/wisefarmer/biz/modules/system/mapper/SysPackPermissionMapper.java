@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.system.entity.SysPackPermission;
-import org.apache.ibatis.annotations.Param;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @Description: 产品包菜单关系表
- * @Author: jeecg-boot
- * @Date:   2022-12-31
+ * @Author: wisefarmer
+ * @Date: 2022-12-31
  * @Version: V1.0
  */
 public interface SysPackPermissionMapper extends BaseMapper<SysPackPermission> {

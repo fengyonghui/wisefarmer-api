@@ -1,5 +1,7 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.util.dynamic.db.DataSourceCachePool;
 import cn.wisefarmer.biz.modules.system.entity.SysDataSource;
 import cn.wisefarmer.biz.modules.system.mapper.SysDataSourceMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysDataSourceService;
@@ -10,8 +12,6 @@ import com.baomidou.dynamic.datasource.creator.druid.DruidDataSourceCreator;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang.StringUtils;
-import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.util.dynamic.db.DataSourceCachePool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 
 /**
  * @Description: 多数据源管理
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-12-25
  * @Version: V1.0
  */

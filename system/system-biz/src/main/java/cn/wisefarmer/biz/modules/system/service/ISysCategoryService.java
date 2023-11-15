@@ -1,17 +1,17 @@
 package cn.wisefarmer.biz.modules.system.service;
 
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.biz.modules.system.entity.SysCategory;
 import cn.wisefarmer.biz.modules.system.model.TreeSelectModel;
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 
 import java.util.List;
 import java.util.Map;
 
 /**
  * @Description: 分类字典
- * @Author: jeecg-boot
- * @Date:   2019-05-29
+ * @Author: wisefarmer
+ * @Date: 2019-05-29
  * @Version: V1.0
  */
 public interface ISysCategoryService extends IService<SysCategory> {

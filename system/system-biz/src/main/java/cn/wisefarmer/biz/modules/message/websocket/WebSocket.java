@@ -1,17 +1,17 @@
 package cn.wisefarmer.biz.modules.message.websocket;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import javax.websocket.*;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
-
-import org.jeecg.common.base.BaseMap;
 import cn.wisefarmer.base.core.common.constant.WebsocketConst;
+import lombok.extern.slf4j.Slf4j;
+import org.jeecg.common.base.BaseMap;
 import org.jeecg.common.modules.redis.client.JeecgRedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import lombok.extern.slf4j.Slf4j;
+
+import javax.websocket.*;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @Author scott
@@ -67,12 +67,12 @@ public class WebSocket {
             if (item.getKey().contains(userId)) {
                 Session session = item.getValue();
                 try {
-                    //update-begin-author:taoyan date:20211012 for: websocket报错 https://gitee.com/jeecg/jeecg-boot/issues/I4C0MU
+                    //update-begin-author:taoyan date:20211012 for: websocket报错 https://gitee.com/jeecg/wisefarmer/issues/I4C0MU
                     synchronized (session){
                         log.debug("【系统 WebSocket】推送单人消息:" + message);
                         session.getBasicRemote().sendText(message);
                     }
-                    //update-end-author:taoyan date:20211012 for: websocket报错 https://gitee.com/jeecg/jeecg-boot/issues/I4C0MU
+                    //update-end-author:taoyan date:20211012 for: websocket报错 https://gitee.com/jeecg/wisefarmer/issues/I4C0MU
                 } catch (Exception e) {
                     log.error(e.getMessage(),e);
                 }

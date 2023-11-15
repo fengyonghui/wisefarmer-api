@@ -1,16 +1,16 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
+import cn.wisefarmer.biz.modules.system.entity.SysPosition;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Select;
-import cn.wisefarmer.biz.modules.system.entity.SysPosition;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
 /**
  * @Description: 职务表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-09-19
  * @Version: V1.0
  */

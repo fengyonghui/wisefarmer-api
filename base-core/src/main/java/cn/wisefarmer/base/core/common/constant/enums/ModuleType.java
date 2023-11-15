@@ -2,7 +2,8 @@ package cn.wisefarmer.base.core.common.constant.enums;
 
 /**
  * 日志按模块分类
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public enum ModuleType {
 

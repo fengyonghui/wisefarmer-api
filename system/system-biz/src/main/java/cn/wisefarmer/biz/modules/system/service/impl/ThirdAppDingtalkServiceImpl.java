@@ -1,8 +1,24 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.system.util.JwtUtil;
+import cn.wisefarmer.base.core.common.util.PasswordUtil;
+import cn.wisefarmer.base.core.common.util.RestUtil;
+import cn.wisefarmer.base.core.common.util.SpringContextUtils;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import cn.wisefarmer.base.core.config.JeecgBaseConfig;
+import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
 import cn.wisefarmer.biz.modules.system.entity.*;
 import cn.wisefarmer.biz.modules.system.mapper.*;
+import cn.wisefarmer.biz.modules.system.model.SysDepartTreeModel;
+import cn.wisefarmer.biz.modules.system.model.ThirdLoginModel;
 import cn.wisefarmer.biz.modules.system.service.*;
+import cn.wisefarmer.biz.modules.system.vo.thirdapp.JdtDepartmentTreeVo;
+import cn.wisefarmer.biz.modules.system.vo.thirdapp.SyncInfoVo;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -25,23 +41,7 @@ import com.jeecg.dingtalk.api.user.body.GetUserListBody;
 import com.jeecg.dingtalk.api.user.vo.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
-import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
 import org.jeecg.common.config.TenantContext;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.base.core.common.system.util.JwtUtil;
-import cn.wisefarmer.base.core.common.util.PasswordUtil;
-import cn.wisefarmer.base.core.common.util.RestUtil;
-import cn.wisefarmer.base.core.common.util.SpringContextUtils;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import cn.wisefarmer.base.core.config.JeecgBaseConfig;
-import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
-import cn.wisefarmer.biz.modules.system.model.SysDepartTreeModel;
-import cn.wisefarmer.biz.modules.system.model.ThirdLoginModel;
-import cn.wisefarmer.biz.modules.system.vo.thirdapp.JdtDepartmentTreeVo;
-import cn.wisefarmer.biz.modules.system.vo.thirdapp.SyncInfoVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
@@ -56,7 +56,8 @@ import java.util.stream.Collectors;
 
 /**
  * 第三方App对接：钉钉实现类
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @Service

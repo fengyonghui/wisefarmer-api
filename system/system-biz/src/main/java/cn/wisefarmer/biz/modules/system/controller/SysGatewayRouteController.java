@@ -1,16 +1,16 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import cn.wisefarmer.biz.modules.system.entity.SysGatewayRoute;
+import cn.wisefarmer.biz.modules.system.service.ISysGatewayRouteService;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
-import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import cn.wisefarmer.biz.modules.system.entity.SysGatewayRoute;
-import cn.wisefarmer.biz.modules.system.service.ISysGatewayRouteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * @Description: gateway路由管理
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2020-05-26
  * @Version: V1.0
  */

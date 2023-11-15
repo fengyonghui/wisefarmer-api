@@ -1,5 +1,9 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
 import cn.wisefarmer.biz.modules.system.entity.SysDepart;
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUserDepart;
@@ -18,10 +22,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.jeecg.common.config.TenantContext;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.system.vo.LoginUser;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -78,7 +78,7 @@ public class SysUserDepartServiceImpl extends ServiceImpl<SysUserDepartMapper, S
 
 			queryDep.in(SysDepart::getId, depIdList);
 			List<SysDepart> depList = sysDepartService.list(queryDep);
-			//jeecg-boot/issues/3906
+				//wisefarmer/issues/3906
 			if(depList != null && depList.size() > 0) {
 				for(SysDepart depart : depList) {
 					depIdModelList.add(new DepartIdModel().convertByUserDepart(depart));

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.farmer.wise.system.biz.modules.system.mapper.SysDictMapper">
+<mapper namespace="cn.wisefarmer.biz.modules.system.mapper.SysDictMapper">
 
-	<!-- 通过字典code获取字典数据 -->
-	<select id="queryDictItemsByCode" parameterType="String"  resultType="cn.wisefarmer.base.core.common.system.vo.DictModel">
-		   select s.item_value as "value",s.item_text as "text",s.item_color as color from sys_dict_item s
-		   where dict_id = (select id from sys_dict where dict_code = #{code})
-		   order by s.sort_order asc, s.create_time DESC;
-	</select>
+    <!-- 通过字典code获取字典数据 -->
+    <select id="queryDictItemsByCode" parameterType="String"
+            resultType="cn.wisefarmer.base.core.common.system.vo.DictModel">
+        select s.item_value as "value", s.item_text as "text", s.item_color as color
+        from sys_dict_item s
+        where dict_id = (select id from sys_dict where dict_code = #{code})
+        order by s.sort_order asc, s.create_time DESC;
+    </select>
 
-	<!-- 通过字典code获取有效的字典数据项 -->
-	<select id="queryEnableDictItemsByCode" parameterType="String"  resultType="cn.wisefarmer.base.core.common.system.vo.DictModel">
+    <!-- 通过字典code获取有效的字典数据项 -->
+    <select id="queryEnableDictItemsByCode" parameterType="String"
+            resultType="cn.wisefarmer.base.core.common.system.vo.DictModel">
 		   select s.item_value as "value",s.item_text as "text", s.item_color as "color" from sys_dict_item s
 		   where dict_id = (select id from sys_dict where dict_code = #{code})
 		   and s.status = 1

@@ -4,7 +4,7 @@ import cn.wisefarmer.base.core.common.constant.CommonConstant;
 
 /**
  * @Description: 操作类型
- * @author: jeecg-boot
+ * @author: wisefarmer
  * @date: 2022/3/31 10:05
  */
 public enum OperateTypeEnum {

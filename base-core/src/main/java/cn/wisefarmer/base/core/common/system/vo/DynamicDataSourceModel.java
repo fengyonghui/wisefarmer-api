@@ -5,7 +5,7 @@ import org.springframework.beans.BeanUtils;
 
 /**
  * @Description: 数据源
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class DynamicDataSourceModel {

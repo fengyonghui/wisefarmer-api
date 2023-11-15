@@ -1,8 +1,8 @@
 package cn.wisefarmer.base.core.common.exception;
 
 /**
- * @Description: jeecg-boot自定义SQL注入异常
- * @author: jeecg-boot
+ * @Description: wisefarmer自定义SQL注入异常
+ * @author: wisefarmer
  */
 public class JeecgSqlInjectionException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

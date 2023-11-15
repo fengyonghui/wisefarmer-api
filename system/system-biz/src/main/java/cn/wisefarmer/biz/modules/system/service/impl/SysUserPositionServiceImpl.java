@@ -1,7 +1,5 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
@@ -10,17 +8,19 @@ import cn.wisefarmer.biz.modules.system.entity.SysUserPosition;
 import cn.wisefarmer.biz.modules.system.mapper.SysUserMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysUserPositionMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysUserPositionService;
-import org.springframework.stereotype.Service;
-
-import java.util.*;
-import java.util.stream.Collectors;
-
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Description: 用户职位关系表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2023-02-14
  * @Version: V1.0
  */

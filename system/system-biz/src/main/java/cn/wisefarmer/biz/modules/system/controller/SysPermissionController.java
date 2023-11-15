@@ -1,14 +1,6 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import cn.wisefarmer.biz.modules.system.entity.*;
-import cn.wisefarmer.biz.modules.system.service.*;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
+import cn.wisefarmer.base.core.base.service.BaseCommonService;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
@@ -17,10 +9,18 @@ import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import cn.wisefarmer.base.core.common.util.Md5Util;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.config.JeecgBaseConfig;
-import cn.wisefarmer.base.core.base.service.BaseCommonService;
+import cn.wisefarmer.biz.modules.system.entity.*;
 import cn.wisefarmer.biz.modules.system.model.SysPermissionTree;
 import cn.wisefarmer.biz.modules.system.model.TreeModel;
+import cn.wisefarmer.biz.modules.system.service.*;
 import cn.wisefarmer.biz.modules.system.util.PermissionDataUtil;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -820,7 +820,7 @@ public class SysPermissionController {
 	}
 
 	/**
-	 * 判断是否外网URL 例如： http://localhost:8080/jeecg-boot/swagger-ui.html#/ 支持特殊格式： {{
+	 * 判断是否外网URL 例如： http://localhost:8080/wisefarmer/swagger-ui.html#/ 支持特殊格式： {{
 	 * window._CONFIG['domianURL'] }}/druid/ {{ JS代码片段 }}，前台解析会自动执行JS代码片段
 	 *
 	 * @return

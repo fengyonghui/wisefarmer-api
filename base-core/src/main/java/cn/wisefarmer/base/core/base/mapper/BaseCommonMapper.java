@@ -1,12 +1,12 @@
 package cn.wisefarmer.base.core.base.mapper;
 
+import cn.wisefarmer.base.core.common.api.dto.LogDTO;
 import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
 import org.apache.ibatis.annotations.Param;
-import cn.wisefarmer.base.core.common.api.dto.LogDTO;
 
 /**
  * @Description: BaseCommonMapper
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface BaseCommonMapper {
 

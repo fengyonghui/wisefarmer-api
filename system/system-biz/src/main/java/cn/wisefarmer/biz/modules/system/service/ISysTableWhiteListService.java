@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @Description: 系统表白名单
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2023-09-12
  * @Version: V1.0
  */

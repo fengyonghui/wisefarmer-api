@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.api.controller;
 
-import cn.wisefarmer.base.core.common.api.dto.message.*;
-import cn.wisefarmer.base.core.common.system.vo.*;
-import com.alibaba.fastjson.JSONObject;
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.api.dto.DataLogDTO;
 import cn.wisefarmer.base.core.common.api.dto.OnlineAuthDTO;
+import cn.wisefarmer.base.core.common.api.dto.message.*;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.desensitization.util.SensitiveInfoUtil;
+import cn.wisefarmer.base.core.common.system.vo.*;
 import cn.wisefarmer.biz.modules.system.service.ISysUserService;
 import cn.wisefarmer.biz.modules.system.service.impl.SysBaseApiImpl;
+import com.alibaba.fastjson.JSONObject;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,8 @@ import java.util.Set;
 
 /**
  * 服务化 system模块 对外接口请求类
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @RestController

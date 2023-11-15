@@ -160,7 +160,7 @@ public class DynamicRouteLoader implements ApplicationEventPublisherAware {
         }else{
             log.warn("ERROR: 从Redis获取网关配置为空，请确认system服务是否启动成功！");
         }
-        
+
         for (MyRouteDefinition definition : routes) {
             log.info("update route : {}", definition.toString());
             Integer status=definition.getStatus();
@@ -184,7 +184,7 @@ public class DynamicRouteLoader implements ApplicationEventPublisherAware {
      * - id: login
      * uri: lb://cloud-jeecg-system
      * predicates:
-     * - Path=/jeecg-boot/sys/**,
+     * - Path=/wisefarmer/sys/**,
      *
      * @param array
      * @return

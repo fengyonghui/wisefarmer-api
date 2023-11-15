@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * @Description: 填值规则
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-11-07
  * @Version: V1.0
  */

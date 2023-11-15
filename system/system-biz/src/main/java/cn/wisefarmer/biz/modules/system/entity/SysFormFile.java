@@ -11,12 +11,13 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 import org.jeecgframework.poi.excel.annotation.Excel;
 import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 /**
  * @Description: 表单评论文件
- * @Author: jeecg-boot
- * @Date:   2022-07-21
+ * @Author: wisefarmer
+ * @Date: 2022-07-21
  * @Version: V1.0
  */
 @Data

@@ -1,5 +1,9 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.util.CommonUtils;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysTenant;
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUserTenant;
@@ -12,16 +16,12 @@ import cn.wisefarmer.biz.modules.system.vo.SysUserTenantVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang.StringUtils;
 import org.jeecg.common.constant.CacheConstant;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.base.core.common.util.CommonUtils;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
@@ -31,8 +31,8 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: sys_user_tenant_relation
- * @Author: jeecg-boot
- * @Date:   2022-12-23
+ * @Author: wisefarmer
+ * @Date: 2022-12-23
  * @Version: V1.0
  */
 @Service

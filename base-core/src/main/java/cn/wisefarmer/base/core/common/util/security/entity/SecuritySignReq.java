@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: SecuritySignReq
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class SecuritySignReq {

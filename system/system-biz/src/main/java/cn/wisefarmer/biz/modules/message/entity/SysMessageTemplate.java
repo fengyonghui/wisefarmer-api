@@ -1,18 +1,16 @@
 package cn.wisefarmer.biz.modules.message.entity;
 
 import cn.wisefarmer.base.core.common.system.base.entity.JeecgEntity;
-import org.jeecgframework.poi.excel.annotation.Excel;
-
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.jeecgframework.poi.excel.annotation.Excel;
 
 /**
  * @Description: 消息模板
- * @Author: jeecg-boot
- * @Date:  2019-04-09
+ * @Author: wisefarmer
+ * @Date: 2019-04-09
  * @Version: V1.0
  */
 @Data

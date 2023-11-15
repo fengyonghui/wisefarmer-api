@@ -1,6 +1,5 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.base.core.common.util.CommonUtils;
@@ -8,6 +7,7 @@ import cn.wisefarmer.base.core.common.util.MinioUtil;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.oss.entity.OssFile;
 import cn.wisefarmer.biz.modules.oss.service.IOssFileService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,8 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * minio文件上传示例
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @RestController

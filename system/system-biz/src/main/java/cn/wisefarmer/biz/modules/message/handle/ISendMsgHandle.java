@@ -4,7 +4,7 @@ import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
 
 /**
  * @Description: 发送信息接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface ISendMsgHandle {
 

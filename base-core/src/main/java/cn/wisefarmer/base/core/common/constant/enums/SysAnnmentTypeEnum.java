@@ -4,7 +4,8 @@ import cn.wisefarmer.base.core.common.util.oConvertUtils;
 
 /**
  * 系统公告自定义跳转方式
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public enum SysAnnmentTypeEnum {
     /**

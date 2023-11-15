@@ -40,7 +40,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 
  /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -198,7 +198,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
             return Result.error("批量查询子节点失败：" + e.getMessage());
         }
     }
-	
+
 	/**
 	 *   添加
 	 *
@@ -213,7 +213,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.add${entityName}(${entityName?uncap_first});
 		return Result.OK("添加成功！");
 	}
-	
+
 	/**
 	 *  编辑
 	 *
@@ -228,7 +228,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.update${entityName}(${entityName?uncap_first});
 		return Result.OK("编辑成功!");
 	}
-	
+
 	/**
 	 *   通过id删除
 	 *
@@ -243,7 +243,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.delete${entityName}(id);
 		return Result.OK("删除成功!");
 	}
-	
+
 	/**
 	 *  批量删除
 	 *
@@ -258,7 +258,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		this.${entityName?uncap_first}Service.removeByIds(Arrays.asList(ids.split(",")));
 		return Result.OK("批量删除成功！");
 	}
-	
+
 	/**
 	 * 通过id查询
 	 *

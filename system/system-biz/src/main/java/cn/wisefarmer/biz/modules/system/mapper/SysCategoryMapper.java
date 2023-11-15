@@ -1,21 +1,20 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-import java.util.Map;
-
 import cn.wisefarmer.biz.modules.system.entity.SysCategory;
 import cn.wisefarmer.biz.modules.system.model.TreeSelectModel;
 import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Description: 分类字典
- * @Author: jeecg-boot
- * @Date:   2019-05-29
+ * @Author: wisefarmer
+ * @Date: 2019-05-29
  * @Version: V1.0
  */
 public interface SysCategoryMapper extends BaseMapper<SysCategory> {

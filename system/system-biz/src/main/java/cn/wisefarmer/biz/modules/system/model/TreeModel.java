@@ -1,16 +1,17 @@
 package cn.wisefarmer.biz.modules.system.model;
 
+import cn.wisefarmer.biz.modules.system.entity.SysPermission;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cn.wisefarmer.biz.modules.system.entity.SysPermission;
-
 /**
-  * 树形列表用到
-  * @author: jeecg-boot
+ * 树形列表用到
+ *
+ * @author: wisefarmer
  */
 public class TreeModel implements Serializable {
 

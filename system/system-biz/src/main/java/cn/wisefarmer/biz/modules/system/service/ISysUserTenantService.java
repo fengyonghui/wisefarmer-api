@@ -12,8 +12,8 @@ import java.util.List;
 
 /**
  * @Description: sys_user_tenant_relation
- * @Author: jeecg-boot
- * @Date:   2022-12-23
+ * @Author: wisefarmer
+ * @Date: 2022-12-23
  * @Version: V1.0
  */
 public interface ISysUserTenantService extends IService<SysUserTenant> {

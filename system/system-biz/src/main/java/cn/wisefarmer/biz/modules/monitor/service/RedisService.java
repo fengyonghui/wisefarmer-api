@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.monitor.service;
 
+import cn.wisefarmer.biz.modules.monitor.domain.RedisInfo;
+import cn.wisefarmer.biz.modules.monitor.exception.RedisConnectException;
+import com.alibaba.fastjson.JSONArray;
+
 import java.util.List;
 import java.util.Map;
 
-import cn.wisefarmer.biz.modules.monitor.exception.RedisConnectException;
-import com.alibaba.fastjson.JSONArray;
-import cn.wisefarmer.biz.modules.monitor.domain.RedisInfo;
-
 /**
  * @Description: redis信息service接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface RedisService {
 

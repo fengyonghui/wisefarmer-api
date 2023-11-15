@@ -3,7 +3,7 @@
 - 启动类：jeecg-module-system/jeecg-system-start/src/main/java/org/jeecg/JeecgSystemApplication.java
 
 - 端口：8080
-- 访问地址：http://localhost:8080/jeecg-boot
+- 访问地址：http://localhost:8080/wisefarmer
 - 账号密码：admin/123456
 
 

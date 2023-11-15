@@ -4,7 +4,8 @@ import cn.wisefarmer.base.core.common.util.oConvertUtils;
 
 /**
  * 发送消息类型枚举
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public enum SendMsgTypeEnum {
 

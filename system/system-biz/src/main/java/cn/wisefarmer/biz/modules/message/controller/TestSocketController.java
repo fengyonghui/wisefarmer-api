@@ -1,19 +1,18 @@
 package cn.wisefarmer.biz.modules.message.controller;
 
-import cn.wisefarmer.biz.modules.message.websocket.WebSocket;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.constant.WebsocketConst;
+import cn.wisefarmer.biz.modules.message.websocket.WebSocket;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.fastjson.JSONObject;
-
 /**
  * @Description: TestSocketController
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @RestController
 @RequestMapping("/sys/socketTest")

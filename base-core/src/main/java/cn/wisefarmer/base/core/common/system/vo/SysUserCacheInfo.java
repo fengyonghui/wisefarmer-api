@@ -1,12 +1,12 @@
 package cn.wisefarmer.base.core.common.system.vo;
 
-import java.util.List;
-
 import cn.wisefarmer.base.core.common.util.DateUtils;
+
+import java.util.List;
 
 /**
  * @Description: 用户缓存信息
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public class SysUserCacheInfo {
 

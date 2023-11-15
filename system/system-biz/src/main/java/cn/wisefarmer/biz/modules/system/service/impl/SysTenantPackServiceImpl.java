@@ -1,7 +1,5 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.apache.shiro.SecurityUtils;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.constant.TenantConstant;
 import cn.wisefarmer.base.core.common.system.vo.LoginUser;
@@ -16,11 +14,12 @@ import cn.wisefarmer.biz.modules.system.mapper.SysRoleMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysTenantPackMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysTenantPackUserMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysTenantPackService;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
@@ -29,7 +28,7 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 租户产品包
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2022-12-31
  * @Version: V1.0
  */

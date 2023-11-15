@@ -1,11 +1,11 @@
 package cn.wisefarmer.biz.modules.message.handle.impl;
 
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.biz.modules.message.handle.ISendMsgHandle;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Description: 发微信消息模板
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 public class WxSendMsgHandle implements ISendMsgHandle {

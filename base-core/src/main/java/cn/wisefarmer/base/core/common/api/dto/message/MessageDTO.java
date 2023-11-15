@@ -4,11 +4,13 @@ import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 普通消息
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
 public class MessageDTO implements Serializable {

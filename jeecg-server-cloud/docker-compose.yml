@@ -1,66 +1,66 @@
 version: '2'
 services:
-  jeecg-boot-nacos:
+  wisefarmer-nacos:
     restart: always
     build:
       context: ./jeecg-cloud-nacos
     ports:
       - 8848:8848
-    container_name: jeecg-boot-nacos
-    hostname: jeecg-boot-nacos
+    container_name: wisefarmer-nacos
+    hostname: wisefarmer-nacos
 
-  jeecg-boot-system:
+  wisefarmer-system:
     depends_on:
-      - jeecg-boot-nacos
+      - wisefarmer-nacos
     build:
       context: ./jeecg-system-cloud-start
     container_name: jeecg-system-start
-    hostname: jeecg-boot-system
+    hostname: wisefarmer-system
     restart: on-failure
     environment:
       - TZ=Asia/Shanghai
 
-  jeecg-boot-demo:
+  wisefarmer-demo:
     depends_on:
-      - jeecg-boot-nacos
+      - wisefarmer-nacos
     build:
       context: ./jeecg-demo-cloud-start
     container_name: jeecg-demo-start
-    hostname: jeecg-boot-demo
+    hostname: wisefarmer-demo
     restart: on-failure
     environment:
       - TZ=Asia/Shanghai
 
-  jeecg-boot-gateway:
+  wisefarmer-gateway:
     restart: on-failure
     build:
       context: ./jeecg-cloud-gateway
     ports:
       - 9999:9999
     depends_on:
-      - jeecg-boot-nacos
-      - jeecg-boot-system
-    container_name: jeecg-boot-gateway
-    hostname: jeecg-boot-gateway
+      - wisefarmer-nacos
+      - wisefarmer-system
+    container_name: wisefarmer-gateway
+    hostname: wisefarmer-gateway
 
-#  jeecg-boot-sentinel:
+#  wisefarmer-sentinel:
 #    restart: on-failure
 #    build:
 #      context: ./jeecg-visual/jeecg-cloud-sentinel
 #    ports:
 #      - 9000:9000
 #    depends_on:
-#      - jeecg-boot-nacos
-#      - jeecg-boot-demo
-#      - jeecg-boot-system
-#      - jeecg-boot-gateway
-#    container_name: jeecg-boot-sentinel
-#    hostname: jeecg-boot-sentinel
+#      - wisefarmer-nacos
+#      - wisefarmer-demo
+#      - wisefarmer-system
+#      - wisefarmer-gateway
+#    container_name: wisefarmer-sentinel
+#    hostname: wisefarmer-sentinel
 #
-#  jeecg-boot-xxljob:
+#  wisefarmer-xxljob:
 #    build:
 #      context: ./jeecg-visual/jeecg-cloud-xxljob
 #    ports:
 #      - 9080:9080
-#    container_name: jeecg-boot-xxljob
-#    hostname: jeecg-boot-xxljob
+#    container_name: wisefarmer-xxljob
+#    hostname: wisefarmer-xxljob

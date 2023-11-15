@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 加载项目配置
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Component("jeecgBaseConfig")
 @ConfigurationProperties(prefix = "jeecg")

@@ -1,5 +1,6 @@
 package cn.wisefarmer.biz.modules.system.service;
 
+import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.biz.modules.system.entity.SysTenant;
 import cn.wisefarmer.biz.modules.system.entity.SysTenantPackUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
@@ -10,14 +11,13 @@ import cn.wisefarmer.biz.modules.system.vo.tenant.TenantPackUserCount;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.wisefarmer.base.core.common.api.vo.Result;
 
 import java.util.Collection;
 import java.util.List;
 
 /**
  * @Description: 租户service接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface ISysTenantService extends IService<SysTenant> {
 

@@ -1,11 +1,11 @@
 package cn.wisefarmer.base.core.common.util;
 
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.util.filter.SsrfFileTypeFilter;
+import cn.wisefarmer.base.core.common.util.filter.StrAttackFilter;
 import io.minio.*;
 import io.minio.http.Method;
 import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.util.filter.SsrfFileTypeFilter;
-import cn.wisefarmer.base.core.common.util.filter.StrAttackFilter;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
@@ -13,7 +13,8 @@ import java.net.URLDecoder;
 
 /**
  * minio文件上传工具类
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 public class MinioUtil {

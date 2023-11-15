@@ -7,7 +7,8 @@ import java.util.Map;
 
 /**
  * 消息模板dto
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
 public class TemplateDTO implements Serializable {

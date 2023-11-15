@@ -16,8 +16,8 @@ import java.io.Serializable;
 
 /**
  * @Description: 租户产品包用户关系表
- * @Author: jeecg-boot
- * @Date:   2023-02-16
+ * @Author: wisefarmer
+ * @Date: 2023-02-16
  * @Version: V1.0
  */
 @Data

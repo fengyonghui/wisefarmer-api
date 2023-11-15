@@ -1,18 +1,18 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import java.io.Serializable;
 
 /**
  * @Description: 用户通告阅读标记表
- * @Author: jeecg-boot
- * @Date:  2019-02-21
+ * @Author: wisefarmer
+ * @Date: 2019-02-21
  * @Version: V1.0
  */
 @Data

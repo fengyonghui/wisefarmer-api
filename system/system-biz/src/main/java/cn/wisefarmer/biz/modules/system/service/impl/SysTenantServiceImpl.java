@@ -1,6 +1,18 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.hutool.core.util.RandomUtil;
+import cn.wisefarmer.base.core.common.api.dto.message.BusMessageDTO;
+import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.constant.enums.SysAnnmentTypeEnum;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
+import cn.wisefarmer.base.core.common.util.SpringContextUtils;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.aop.TenantLog;
+import cn.wisefarmer.biz.modules.system.entity.*;
 import cn.wisefarmer.biz.modules.system.mapper.SysTenantMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysTenantPackUserMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysUserDepartMapper;
@@ -8,28 +20,16 @@ import cn.wisefarmer.biz.modules.system.mapper.SysUserTenantMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysTenantPackService;
 import cn.wisefarmer.biz.modules.system.service.ISysTenantService;
 import cn.wisefarmer.biz.modules.system.service.ISysUserService;
-import cn.hutool.core.util.RandomUtil;
-import cn.wisefarmer.biz.modules.system.entity.*;
 import cn.wisefarmer.biz.modules.system.vo.tenant.*;
+import cn.wisefarmer.local.api.ISysBaseAPI;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
-import cn.wisefarmer.base.core.common.api.dto.message.BusMessageDTO;
-import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
-import cn.wisefarmer.base.core.common.api.vo.Result;
 import org.jeecg.common.config.TenantContext;
 import org.jeecg.common.constant.CacheConstant;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.local.api.ISysBaseAPI;
-import cn.wisefarmer.base.core.common.system.vo.LoginUser;
-import cn.wisefarmer.base.core.common.util.SpringContextUtils;
-import cn.wisefarmer.base.core.common.constant.enums.SysAnnmentTypeEnum;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
@@ -39,7 +39,7 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 租户实现类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Service("sysTenantServiceImpl")
 @Slf4j

@@ -1,17 +1,6 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppDingtalkServiceImpl;
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jeecg.dingtalk.api.core.response.Response;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
-import org.apache.shiro.SecurityUtils;
 import cn.wisefarmer.base.core.common.api.vo.Result;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.CommonSendStatus;
 import cn.wisefarmer.base.core.common.constant.WebsocketConst;
@@ -19,7 +8,6 @@ import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
 import cn.wisefarmer.base.core.common.system.util.JwtUtil;
 import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import cn.wisefarmer.base.core.common.util.DateUtils;
-import org.jeecg.common.util.RedisUtil;
 import cn.wisefarmer.base.core.common.util.TokenUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.config.mybatis.MybatisPlusSaasConfig;
@@ -30,8 +18,20 @@ import cn.wisefarmer.biz.modules.system.entity.SysAnnouncementSend;
 import cn.wisefarmer.biz.modules.system.service.ISysAnnouncementSendService;
 import cn.wisefarmer.biz.modules.system.service.ISysAnnouncementService;
 import cn.wisefarmer.biz.modules.system.service.impl.SysBaseApiImpl;
+import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppDingtalkServiceImpl;
 import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppWechatEnterpriseServiceImpl;
 import cn.wisefarmer.biz.modules.system.util.XssUtils;
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jeecg.dingtalk.api.core.response.Response;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.SecurityUtils;
+import org.jeecg.common.config.TenantContext;
+import org.jeecg.common.util.RedisUtil;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.ExportParams;
@@ -50,7 +50,10 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -62,7 +65,7 @@ import static cn.wisefarmer.base.core.common.constant.CommonConstant.ANNOUNCEMEN
 /**
  * @Title: Controller
  * @Description: 系统通告表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-01-02
  * @Version: V1.0
  */

@@ -1,16 +1,15 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * @Description: 用户部门
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 @TableName("sys_user_depart")

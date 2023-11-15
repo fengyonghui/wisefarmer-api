@@ -1,16 +1,15 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRole;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRoleUser;
 import cn.wisefarmer.biz.modules.system.mapper.SysDepartRoleMapper;
 import cn.wisefarmer.biz.modules.system.mapper.SysDepartRoleUserMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysDepartRoleUserService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
@@ -18,8 +17,8 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 部门角色人员信息
- * @Author: jeecg-boot
- * @Date:   2020-02-13
+ * @Author: wisefarmer
+ * @Date: 2020-02-13
  * @Version: V1.0
  */
 @Service

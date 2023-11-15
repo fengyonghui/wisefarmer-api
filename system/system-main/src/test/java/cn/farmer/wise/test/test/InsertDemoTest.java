@@ -1,11 +1,11 @@
 package cn.farmer.wise.test.test;
 
-import com.alibaba.fastjson.JSONObject;
-import cn.wisefarmer.JeecgSystemApplication;
+import cn.wisefarmer.WisefarmerApplication;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.system.util.JwtUtil;
-import org.jeecg.common.util.RedisUtil;
 import cn.wisefarmer.base.core.common.util.RestUtil;
+import com.alibaba.fastjson.JSONObject;
+import org.jeecg.common.util.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +20,12 @@ import org.springframework.test.context.junit4.SpringRunner;
  * 系统用户单元测试
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,classes = JeecgSystemApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = WisefarmerApplication.class)
 public class InsertDemoTest {
     /**
      * 测试地址：实际使用时替换成你自己的地址
      */
-    private final String BASE_URL = "http://localhost:8080/jeecg-boot//test/jeecgDemo/";
+    private final String BASE_URL = "http://localhost:8080/wisefarmer//test/jeecgDemo/";
     //测试：用户名和密码
     private final String USERNAME = "admin";
     private final String PASSWORD = "123456";

@@ -1,12 +1,11 @@
 package cn.wisefarmer.biz.modules.system.service;
 
 import cn.wisefarmer.biz.modules.system.entity.SysDataLog;
-
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * @Description: 数据日志service接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface ISysDataLogService extends IService<SysDataLog> {
 

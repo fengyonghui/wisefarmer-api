@@ -16,7 +16,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 /**
  * @Description: ${subTab.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel(value="${tableName}对象", description="${tableVo.ftlDescription}")
 public class ${subTab.entityName} implements Serializable {
     private static final long serialVersionUID = 1L;
-    
+
     <#list subTab.originalColumns as po>
 	/**${po.filedComment}*/
 	<#if po.fieldName == primaryKeyField>

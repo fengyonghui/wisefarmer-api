@@ -1,5 +1,10 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.constant.FillRuleConstant;
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.util.FillRuleUtil;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysCategory;
 import cn.wisefarmer.biz.modules.system.mapper.SysCategoryMapper;
 import cn.wisefarmer.biz.modules.system.model.TreeSelectModel;
@@ -9,11 +14,6 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import cn.wisefarmer.base.core.common.constant.FillRuleConstant;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.base.core.common.util.FillRuleUtil;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,8 +25,8 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 分类字典
- * @Author: jeecg-boot
- * @Date:   2019-05-29
+ * @Author: wisefarmer
+ * @Date: 2019-05-29
  * @Version: V1.0
  */
 @Service

@@ -2,16 +2,15 @@ package cn.wisefarmer.biz.modules.message.util;
 
 import cn.wisefarmer.biz.modules.message.entity.SysMessage;
 import cn.wisefarmer.biz.modules.message.entity.SysMessageTemplate;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
 import cn.wisefarmer.biz.modules.message.handle.enums.SendMsgStatusEnum;
 import cn.wisefarmer.biz.modules.message.service.ISysMessageService;
 import cn.wisefarmer.biz.modules.message.service.ISysMessageTemplateService;
+import com.alibaba.fastjson.JSONObject;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.alibaba.fastjson.JSONObject;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -21,7 +20,8 @@ import java.util.Map;
 
 /**
  * 消息生成工具
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 
 @Component

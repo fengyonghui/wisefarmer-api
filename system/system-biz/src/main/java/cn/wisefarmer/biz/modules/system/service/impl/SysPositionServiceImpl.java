@@ -1,11 +1,11 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.biz.modules.system.entity.SysPosition;
 import cn.wisefarmer.biz.modules.system.mapper.SysPositionMapper;
 import cn.wisefarmer.biz.modules.system.service.ISysPositionService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 /**
  * @Description: 职务表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-09-19
  * @Version: V1.0
  */

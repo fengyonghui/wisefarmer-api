@@ -1,17 +1,19 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
+import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 租户信息
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
 @TableName("sys_tenant")

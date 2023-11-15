@@ -1,10 +1,13 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import cn.wisefarmer.base.core.base.service.BaseCommonService;
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRole;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRolePermission;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRoleUser;
@@ -12,31 +15,30 @@ import cn.wisefarmer.biz.modules.system.entity.SysPermissionDataRule;
 import cn.wisefarmer.biz.modules.system.service.*;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
-import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
-import cn.wisefarmer.base.core.common.system.vo.LoginUser;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import cn.wisefarmer.base.core.base.service.BaseCommonService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
-
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 
- /**
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+/**
  * @Description: 部门角色
- * @Author: jeecg-boot
- * @Date:   2020-02-12
+ * @Author: wisefarmer
+ * @Date: 2020-02-12
  * @Version: V1.0
  */
 @Slf4j

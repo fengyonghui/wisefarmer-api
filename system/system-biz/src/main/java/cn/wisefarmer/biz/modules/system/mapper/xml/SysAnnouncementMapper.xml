@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.farmer.wise.system.biz.modules.system.mapper.SysAnnouncementMapper">
+<mapper namespace="cn.wisefarmer.biz.modules.system.mapper.SysAnnouncementMapper">
 
-	<resultMap id="SysAnnouncement" type="cn.wisefarmer.biz.modules.system.entity.SysAnnouncement" >
-		<result column="id" property="id" jdbcType="VARCHAR"/>
-		<result column="titile" property="titile" jdbcType="VARCHAR"/>
-		<result column="msg_content" property="msgContent" jdbcType="VARCHAR"/>
-		<result column="start_time" property="startTime" jdbcType="TIMESTAMP"/>
-		<result column="end_time" property="endTime" jdbcType="TIMESTAMP"/>
-		<result column="sender" property="sender" jdbcType="VARCHAR"/>
-		<result column="priority" property="priority" jdbcType="VARCHAR"/>
-		<result column="msg_category" property="msgCategory" jdbcType="VARCHAR"/>
+    <resultMap id="SysAnnouncement" type="cn.wisefarmer.biz.modules.system.entity.SysAnnouncement">
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="titile" property="titile" jdbcType="VARCHAR"/>
+        <result column="msg_content" property="msgContent" jdbcType="VARCHAR"/>
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP"/>
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP"/>
+        <result column="sender" property="sender" jdbcType="VARCHAR"/>
+        <result column="priority" property="priority" jdbcType="VARCHAR"/>
+        <result column="msg_category" property="msgCategory" jdbcType="VARCHAR"/>
 		<result column="msg_type" property="msgType" jdbcType="VARCHAR"/>
 		<result column="send_status" property="sendStatus" jdbcType="VARCHAR"/>
 		<result column="send_time" property="sendTime" jdbcType="VARCHAR"/>

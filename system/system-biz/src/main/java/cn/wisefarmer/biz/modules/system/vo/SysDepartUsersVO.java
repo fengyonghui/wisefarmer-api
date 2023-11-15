@@ -1,13 +1,13 @@
 package cn.wisefarmer.biz.modules.system.vo;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.List;
 
-import lombok.Data;
-
 /**
  * @Description: 系统部门VO
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class SysDepartUsersVO implements Serializable{

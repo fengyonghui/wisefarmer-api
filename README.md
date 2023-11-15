@@ -7,15 +7,14 @@
 JEECG BOOT 低代码开发平台
 ===============
 
-当前最新版本： 3.6.0（发布日期：2023-10-23） 
+当前最新版本： 3.6.0（发布日期：2023-10-23）
 
-
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/jeecg-boot/blob/master/LICENSE)
+[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/wisefarmer/blob/master/LICENSE)
 [![](https://img.shields.io/badge/Author-北京国炬软件-orange.svg)](http://jeecg.com/aboutusIndex)
 [![](https://img.shields.io/badge/Blog-官方博客-blue.svg)](https://jeecg.blog.csdn.net)
-[![](https://img.shields.io/badge/version-3.6.0-brightgreen.svg)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeecg-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
+[![](https://img.shields.io/badge/version-3.6.0-brightgreen.svg)](https://github.com/zhangdaiscott/wisefarmer)
+[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/wisefarmer.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/wisefarmer)
+[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/wisefarmer.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/wisefarmer)
 
 
 
@@ -31,33 +30,33 @@ JeecgBoot 提供了一系列`低代码模块`，实现在线开发`真正的零�
 
 `JEECG宗旨是:` 简单功能由OnlineCoding配置实现，做到`零代码开发`；复杂功能由代码生成器生成进行手工Merge 实现`低代码开发`，既保证了`智能`又兼顾`灵活`；实现了低代码开发的同时又支持灵活编码，解决了当前低代码产品普遍不灵活的弊端！
 
-`JEECG业务流程:` 采用工作流来实现、扩展出任务接口，供开发编写业务逻辑，表单提供多种解决方案： 表单设计器、online配置表单、编码表单。同时实现了流程与表单的分离设计（松耦合）、并支持任务节点灵活配置，既保证了公司流程的保密性，又减少了开发人员的工作量。
+`JEECG业务流程:` 采用工作流来实现、扩展出任务接口，供开发编写业务逻辑，表单提供多种解决方案：
+表单设计器、online配置表单、编码表单。同时实现了流程与表单的分离设计（松耦合）、并支持任务节点灵活配置，既保证了公司流程的保密性，又减少了开发人员的工作量。
 
-遇到技术问题，[请在这里反馈BUG](https://github.com/jeecgboot/jeecg-boot/issues/new)
+遇到技术问题，[请在这里反馈BUG](https://github.com/jeecgboot/wisefarmer/issues/new)
 
 适用项目
 -----------------------------------
-Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，尤其适合SAAS项目、企业信息管理系统（MIS）、内部办公系统（OA）、企业资源计划系统（ERP）、客户关系管理系统（CRM）等，其半智能手工Merge的开发方式，可以显著提高开发效率70%以上，极大降低开发成本。
+wisefarmer低代码开发平台，可以应用在任何J2EE项目的开发中，尤其适合SAAS项目、企业信息管理系统（MIS）、内部办公系统（OA）、企业资源计划系统（ERP）、客户关系管理系统（CRM）等，其半智能手工Merge的开发方式，可以显著提高开发效率70%以上，极大降低开发成本。
 
 
 
 
 项目源码
 -----------------------------------
-| 仓库 |前端源码 Vue3版 | 后端JAVA源码 |
-|-|-|-|
-| Github | [jeecgboot-vue3](https://github.com/jeecgboot/jeecgboot-vue3)   | [jeecg-boot](https://github.com/jeecgboot/jeecg-boot) |
-| 码云 | [jeecgboot-vue3](https://gitee.com/jeecg/jeecgboot-vue3)   | [jeecg-boot](https://gitee.com/jeecg/jeecg-boot) |
+| 仓库 |前端源码 Vue3版 | 后端JAVA源码 | |-|-|-| | Github | [jeecgboot-vue3](https://github.com/jeecgboot/jeecgboot-vue3)
+| [wisefarmer](https://github.com/jeecgboot/wisefarmer) | | 码云
+| [jeecgboot-vue3](https://gitee.com/jeecg/jeecgboot-vue3)   | [wisefarmer](https://gitee.com/jeecg/wisefarmer) |
 
 
 #### 项目说明
 
 | 项目名                | 说明                     | 
 |--------------------|------------------------|
-| `jeecg-boot`    | JAVA后台源码（支持微服务）        |
+| `wisefarmer`    | JAVA后台源码（支持微服务）        |
 | `jeecgboot-vue3` | 前端源码 (Vue3版本) |
 | `jeecg-uniapp` | [APP开发框架，一份代码多终端适配，同时支持APP、小程序、H5](https://github.com/jeecgboot/jeecg-uniapp) |
-| `jeecg-boot-starter` | [Stater依赖项目单独维护，点击下载](https://gitee.com/jeecg/jeecg-boot-starter) |
+| `wisefarmer-starter` | [Stater依赖项目单独维护，点击下载](https://gitee.com/jeecg/wisefarmer-starter) |
 | `更多开源项目` | [更多源码下载](http://jeecg.com/download) |
 
 
@@ -97,7 +96,7 @@ Docker快速启动项目
 技术支持
 -----------------------------------
 
-关闭gitee的issue通道，使用中遇到问题或者BUG可以在 [Github上提Issues](https://github.com/jeecgboot/jeecg-boot/issues/new)
+关闭gitee的issue通道，使用中遇到问题或者BUG可以在 [Github上提Issues](https://github.com/jeecgboot/wisefarmer/issues/new)
 
 官方支持： [http://jeecg.com/doc/help](http://jeecg.com/doc/help)
 
@@ -115,7 +114,7 @@ VUE2版本专题介绍
 #### 源码下载
 | 源码                | 源码地址                     | 
 |--------------------|------------------------|
-| 后端JAVA源码 `Vue2版`  |https://gitee.com/jeecg/jeecg-boot/tree/v3.4.3last    |
+| 后端JAVA源码 `Vue2版`  |https://gitee.com/jeecg/wisefarmer/tree/v3.4.3last    |
 | 前端vue2源码 `Vue2版`  |https://gitee.com/jeecg/ant-design-vue-jeecg    |
 
 #### Vue2与Vue3版本区别
@@ -133,17 +132,18 @@ VUE2版本专题介绍
 Star走势图
 -----------------------------------
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jeecgboot/jeecg-boot&type=Date)](https://star-history.com/#jeecgboot/jeecg-boot)
+[![Star History Chart](https://api.star-history.com/svg?repos=jeecgboot/wisefarmer&type=Date)](https://star-history.com/#jeecgboot/wisefarmer)
 
 
 
 
 后台目录结构
 -----------------------------------
+
 ```
 项目结构
-├─jeecg-boot-parent（父POM： 项目依赖、modules组织）
-│  ├─jeecg-boot-base-core（共通模块： 工具类、config、权限、查询过滤器、注解等）
+├─wisefarmer-parent（父POM： 项目依赖、modules组织）
+│  ├─wisefarmer-base-core（共通模块： 工具类、config、权限、查询过滤器、注解等）
 │  ├─jeecg-module-demo    示例代码
 │  ├─jeecg-module-system  System系统管理目录
 │  │  ├─jeecg-system-biz    System系统管理权限等功能
@@ -313,7 +313,8 @@ Star走势图
 ![微服务架构图](https://jeecgos.oss-cn-beijing.aliyuncs.com/files/jeecgboot_springcloud2022.png "在这里输入图片标题")
 
 ### Jeecg Boot 产品功能蓝图
-![功能蓝图](https://jeecgos.oss-cn-beijing.aliyuncs.com/upload/test/Jeecg-Boot-lantu202005_1590912449914.jpg "在这里输入图片标题")
+
+![功能蓝图](https://jeecgos.oss-cn-beijing.aliyuncs.com/upload/test/wisefarmer-lantu202005_1590912449914.jpg "在这里输入图片标题")
 
 
 

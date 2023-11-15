@@ -1,11 +1,11 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
+import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import cn.wisefarmer.base.core.common.aspect.annotation.Dict;
 import org.jeecgframework.poi.excel.annotation.Excel;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -13,8 +13,8 @@ import java.io.Serializable;
 
 /**
  * @Description: 系统通告表
- * @Author: jeecg-boot
- * @Date:  2019-01-02
+ * @Author: wisefarmer
+ * @Date: 2019-01-02
  * @Version: V1.0
  */
 @Data

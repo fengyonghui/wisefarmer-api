@@ -21,7 +21,7 @@ import lombok.experimental.Accessors;
 
 /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */

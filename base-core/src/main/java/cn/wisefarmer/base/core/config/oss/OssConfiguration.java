@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 云存储 配置
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Configuration
 @ConditionalOnProperty(prefix = "jeecg.oss", name = "endpoint")

@@ -1,7 +1,8 @@
 package cn.wisefarmer.base.core.common.constant;
 /**
  * 数据库上下文常量
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public interface DataBaseConstant {
 	//*********数据库类型****************************************

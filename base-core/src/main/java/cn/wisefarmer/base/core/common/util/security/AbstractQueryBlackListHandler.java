@@ -51,7 +51,7 @@ public abstract class AbstractQueryBlackListHandler {
      */
     public boolean isPass(String sql) {
         List<QueryTable> list = null;
-        //【jeecg-boot/issues/4040】在线报表不支持子查询，解析报错 #4040
+        //【wisefarmer/issues/4040】在线报表不支持子查询，解析报错 #4040
         try {
             list = this.getQueryTableInfo(sql.toLowerCase());
         } catch (Exception e) {

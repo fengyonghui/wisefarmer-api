@@ -1,12 +1,12 @@
 package cn.wisefarmer.biz.config.jimureport;
 
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.system.util.JwtUtil;
 import cn.wisefarmer.base.core.common.system.vo.SysUserCacheInfo;
-import org.jeecg.common.util.RedisUtil;
 import cn.wisefarmer.base.core.common.util.TokenUtils;
-import org.jeecg.modules.jmreport.api.JmReportTokenServiceI;
 import cn.wisefarmer.biz.modules.system.service.impl.SysBaseApiImpl;
+import lombok.extern.slf4j.Slf4j;
+import org.jeecg.common.util.RedisUtil;
+import org.jeecg.modules.jmreport.api.JmReportTokenServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
@@ -19,9 +19,10 @@ import java.util.Set;
 
 /**
  * 自定义积木报表鉴权(如果不进行自定义，则所有请求不做权限控制)
- *  * 1.自定义获取登录token
- *  * 2.自定义获取登录用户
- * @author: jeecg-boot
+ * * 1.自定义获取登录token
+ * * 2.自定义获取登录用户
+ *
+ * @author: wisefarmer
  */
 
 

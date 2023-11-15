@@ -1,5 +1,12 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
+import cn.wisefarmer.base.core.common.util.DateUtils;
+import cn.wisefarmer.base.core.common.util.PasswordUtil;
+import cn.wisefarmer.base.core.common.util.UUIDGenerator;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysRole;
 import cn.wisefarmer.biz.modules.system.entity.SysThirdAccount;
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
@@ -18,13 +25,6 @@ import com.jeecg.dingtalk.api.core.vo.AccessToken;
 import com.jeecg.dingtalk.api.user.JdtUserAPI;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.base.core.common.system.vo.LoginUser;
-import cn.wisefarmer.base.core.common.util.DateUtils;
-import cn.wisefarmer.base.core.common.util.PasswordUtil;
-import cn.wisefarmer.base.core.common.util.UUIDGenerator;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -34,8 +34,8 @@ import java.util.List;
 
 /**
  * @Description: 第三方登录账号表
- * @Author: jeecg-boot
- * @Date:   2020-11-17
+ * @Author: wisefarmer
+ * @Date: 2020-11-17
  * @Version: V1.0
  */
 @Service

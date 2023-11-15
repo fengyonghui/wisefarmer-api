@@ -1,5 +1,13 @@
 package cn.wisefarmer.biz.modules.system.service.impl;
 
+import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.constant.SymbolConstant;
+import cn.wisefarmer.base.core.common.constant.enums.FileTypeEnum;
+import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.util.CommonUtils;
+import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.biz.modules.system.entity.SysComment;
 import cn.wisefarmer.biz.modules.system.entity.SysFiles;
 import cn.wisefarmer.biz.modules.system.entity.SysFormFile;
@@ -10,21 +18,13 @@ import cn.wisefarmer.biz.modules.system.service.ISysCommentService;
 import cn.wisefarmer.biz.modules.system.vo.SysCommentFileVo;
 import cn.wisefarmer.biz.modules.system.vo.SysCommentVO;
 import cn.wisefarmer.biz.modules.system.vo.UserAvatar;
+import cn.wisefarmer.local.api.ISysBaseAPI;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
 import org.jeecg.common.config.TenantContext;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.constant.SymbolConstant;
-import cn.wisefarmer.base.core.common.constant.enums.FileTypeEnum;
-import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.local.api.ISysBaseAPI;
-import cn.wisefarmer.base.core.common.util.CommonUtils;
 import org.jeecg.common.util.RedisUtil;
-import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -42,7 +42,7 @@ import java.util.regex.Pattern;
 
 /**
  * @Description: 系统评论回复表
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2022-07-19
  * @Version: V1.0
  */

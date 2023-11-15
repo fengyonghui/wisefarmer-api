@@ -26,7 +26,7 @@ import java.util.*;
 
 /**
  * @Description: VxeMockController
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @RestController
 @RequestMapping("/mock/vxe")

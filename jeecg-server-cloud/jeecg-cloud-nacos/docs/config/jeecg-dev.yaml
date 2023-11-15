@@ -26,17 +26,17 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://jeecg-boot-mysql:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://wisefarmer-mysql:3306/wisefarmer?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
           username: root
           password: root
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     database: 0
-    host: jeecg-boot-redis
+    host: wisefarmer-redis
     password:
     port: 6379
   rabbitmq:
-    host: jeecg-boot-rabbitmq
+    host: wisefarmer-rabbitmq
     username: guest
     password: guest
     port: 5672
@@ -72,7 +72,7 @@ jeecg:
     staticDomain: ??
   elasticsearch:
     cluster-name: jeecg-ES
-    cluster-nodes: jeecg-boot-es:9200
+    cluster-nodes: wisefarmer-es:9200
     check-enabled: false
   file-view-domain: 127.0.0.1:8012
   minio:
@@ -90,13 +90,13 @@ jeecg:
     appsecret: ??
   xxljob:
     enabled: false
-    adminAddresses: http://jeecg-boot-xxljob:9080/xxl-job-admin
+    adminAddresses: http://wisefarmer-xxljob:9080/xxl-job-admin
     appname: ${spring.application.name}
     accessToken: ''
     logPath: logs/jeecg/job/jobhandler/
     logRetentionDays: 30
   redisson:
-    address: jeecg-boot-redis:6379
+    address: wisefarmer-redis:6379
     password:
     type: STANDALONE
     enabled: true
@@ -117,16 +117,16 @@ justauth:
     GITHUB:
       client-id: ??
       client-secret: ??
-      redirect-uri: http://sso.test.com:8080/jeecg-boot/thirdLogin/github/callback
+      redirect-uri: http://sso.test.com:8080/wisefarmer/thirdLogin/github/callback
     WECHAT_ENTERPRISE:
       client-id: ??
       client-secret: ??
-      redirect-uri: http://sso.test.com:8080/jeecg-boot/thirdLogin/wechat_enterprise/callback
+      redirect-uri: http://sso.test.com:8080/wisefarmer/thirdLogin/wechat_enterprise/callback
       agent-id: ??
     DINGTALK:
       client-id: ??
       client-secret: ??
-      redirect-uri: http://sso.test.com:8080/jeecg-boot/thirdLogin/dingtalk/callback
+      redirect-uri: http://sso.test.com:8080/wisefarmer/thirdLogin/dingtalk/callback
   cache:
     type: default
     prefix: 'demo::'

@@ -1,5 +1,6 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
+import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -8,7 +9,6 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
-import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -16,7 +16,7 @@ import java.util.Date;
 
 /**
  * @Description: 系统数据日志
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -1,16 +1,16 @@
 package cn.wisefarmer.base.core.common.util;
 
-import java.security.Key;
-import java.security.SecureRandom;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.PBEParameterSpec;
+import java.security.Key;
+import java.security.SecureRandom;
 
 /**
  * @Description: 密码工具类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public class PasswordUtil {
 

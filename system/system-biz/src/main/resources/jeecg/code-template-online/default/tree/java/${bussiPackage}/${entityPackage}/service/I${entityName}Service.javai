@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -17,10 +17,10 @@ public interface I${entityName}Service extends IService<${entityName}> {
 
 	/**根节点父ID的值*/
 	public static final String ROOT_PID_VALUE = "0";
-	
+
 	/**树节点有子节点状态值*/
 	public static final String HASCHILD = "1";
-	
+
 	/**树节点无子节点状态值*/
 	public static final String NOCHILD = "0";
 
@@ -30,7 +30,7 @@ public interface I${entityName}Service extends IService<${entityName}> {
 	 * @param ${entityName?uncap_first}
 	 */
 	void add${entityName}(${entityName} ${entityName?uncap_first});
-	
+
 	/**
    * 修改节点
    *
@@ -38,7 +38,7 @@ public interface I${entityName}Service extends IService<${entityName}> {
    * @throws JeecgBootException
    */
 	void update${entityName}(${entityName} ${entityName?uncap_first}) throws JeecgBootException;
-	
+
 	/**
 	 * 删除节点
 	 *

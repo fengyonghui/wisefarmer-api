@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * @Description: oss云存储Mapper
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface OssFileMapper extends BaseMapper<OssFile> {
 

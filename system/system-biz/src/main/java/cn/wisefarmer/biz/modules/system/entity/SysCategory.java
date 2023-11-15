@@ -12,8 +12,8 @@ import java.io.Serializable;
 
 /**
  * @Description: 分类字典
- * @Author: jeecg-boot
- * @Date:   2019-05-29
+ * @Author: wisefarmer
+ * @Date: 2019-05-29
  * @Version: V1.0
  */
 @Data

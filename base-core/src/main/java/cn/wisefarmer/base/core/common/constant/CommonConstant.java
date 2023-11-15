@@ -2,7 +2,7 @@ package cn.wisefarmer.base.core.common.constant;
 
 /**
  * @Description: 通用常量
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface CommonConstant {
 
@@ -310,7 +310,7 @@ public interface CommonConstant {
     /**===============================================================================================*/
     /**
      * ::非常重要::
-     * 注意：这四个常量值如果修改，需要与 jeecg-boot-starter/jeecg-boot-common/org.jeecg.config.FeignConfig 类中的值保持一致。
+     * 注意：这四个常量值如果修改，需要与 wisefarmer-starter/wisefarmer-common/org.jeecg.config.FeignConfig 类中的值保持一致。
      */
     String X_ACCESS_TOKEN = "X-Access-Token";
     String X_SIGN = "X-Sign";

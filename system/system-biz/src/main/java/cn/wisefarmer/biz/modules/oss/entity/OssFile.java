@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.oss.entity;
 
+import cn.wisefarmer.base.core.common.system.base.entity.JeecgEntity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import cn.wisefarmer.base.core.common.system.base.entity.JeecgEntity;
 import org.jeecgframework.poi.excel.annotation.Excel;
 
 /**
  * @Description: oss云存储实体类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 @TableName("oss_file")

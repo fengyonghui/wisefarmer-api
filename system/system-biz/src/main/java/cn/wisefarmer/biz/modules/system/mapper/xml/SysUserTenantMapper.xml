@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.farmer.wise.system.biz.modules.system.mapper.SysUserTenantMapper">
+<mapper namespace="cn.wisefarmer.biz.modules.system.mapper.SysUserTenantMapper">
 
     <!-- 通过租户id获取数据 -->
     <select id="getPageUserList" resultType="cn.wisefarmer.biz.modules.system.entity.SysUser">

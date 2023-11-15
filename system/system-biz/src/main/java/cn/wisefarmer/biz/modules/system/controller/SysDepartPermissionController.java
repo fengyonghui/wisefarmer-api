@@ -1,44 +1,43 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.apache.shiro.SecurityUtils;
+import cn.wisefarmer.base.core.base.service.BaseCommonService;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
 import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
 import cn.wisefarmer.base.core.common.system.vo.LoginUser;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
-import cn.wisefarmer.base.core.base.service.BaseCommonService;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartPermission;
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRolePermission;
 import cn.wisefarmer.biz.modules.system.entity.SysPermission;
 import cn.wisefarmer.biz.modules.system.entity.SysPermissionDataRule;
 import cn.wisefarmer.biz.modules.system.model.TreeModel;
 import cn.wisefarmer.biz.modules.system.service.ISysDepartPermissionService;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
 import cn.wisefarmer.biz.modules.system.service.ISysDepartRolePermissionService;
 import cn.wisefarmer.biz.modules.system.service.ISysPermissionDataRuleService;
 import cn.wisefarmer.biz.modules.system.service.ISysPermissionService;
-
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 
- /**
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.*;
+import java.util.stream.Collectors;
+
+/**
  * @Description: 部门权限表
- * @Author: jeecg-boot
- * @Date:   2020-02-11
+ * @Author: wisefarmer
+ * @Date: 2020-02-11
  * @Version: V1.0
  */
 @Slf4j

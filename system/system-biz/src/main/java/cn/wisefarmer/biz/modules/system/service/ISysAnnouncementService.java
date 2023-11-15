@@ -9,8 +9,8 @@ import java.util.List;
 
 /**
  * @Description: 系统通告表
- * @Author: jeecg-boot
- * @Date:  2019-01-02
+ * @Author: wisefarmer
+ * @Date: 2019-01-02
  * @Version: V1.0
  */
 public interface ISysAnnouncementService extends IService<SysAnnouncement> {

@@ -41,7 +41,7 @@ import org.jeecg.common.aspect.annotation.AutoLog;
 
  /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -52,7 +52,7 @@ import org.jeecg.common.aspect.annotation.AutoLog;
 public class ${entityName}Controller extends JeecgController<${entityName}, I${entityName}Service> {
 	@Autowired
 	private I${entityName}Service ${entityName?uncap_first}Service;
-	
+
 	/**
 	 * 分页列表查询
 	 *
@@ -75,7 +75,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		return Result.OK(pageList);
 
 	}
-	
+
 	/**
 	 *   添加
 	 * @param ${entityName?uncap_first}
@@ -88,7 +88,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.save(${entityName?uncap_first});
 		return Result.OK("添加成功！");
 	}
-	
+
 	/**
 	 *  编辑
 	 *
@@ -102,7 +102,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.updateById(${entityName?uncap_first});
 		return Result.OK("编辑成功!");
 	}
-	
+
 	/**
 	 *  通过id删除
 	 * @param id
@@ -115,7 +115,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		${entityName?uncap_first}Service.removeById(id);
 		return Result.OK("删除成功!");
 	}
-	
+
 	/**
 	 *  批量删除
 	 *
@@ -129,7 +129,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
 		this.${entityName?uncap_first}Service.removeByIds(Arrays.asList(ids.split(",")));
 		return Result.OK("批量删除成功！");
 	}
-	
+
 	/**
 	 * 通过id查询
      *

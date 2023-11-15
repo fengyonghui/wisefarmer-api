@@ -1,18 +1,18 @@
 package cn.wisefarmer.biz.modules.message.handle.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ObjectUtils;
 import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.system.util.JwtUtil;
-import org.jeecg.common.util.RedisUtil;
 import cn.wisefarmer.base.core.common.util.SpringContextUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.config.StaticConfig;
 import cn.wisefarmer.biz.modules.message.handle.ISendMsgHandle;
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.mapper.SysUserMapper;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.ObjectUtils;
+import org.jeecg.common.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -27,7 +27,7 @@ import java.util.Set;
 
 /**
  * @Description: 邮箱发送信息
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 @Component("emailSendMsgHandle")

@@ -1,18 +1,20 @@
 package cn.wisefarmer.base.core.common.util.dynamic.db;
 
 import cn.wisefarmer.base.core.common.api.CommonAPI;
-import com.alibaba.druid.pool.DruidDataSource;
-import org.jeecg.common.constant.CacheConstant;
 import cn.wisefarmer.base.core.common.system.vo.DynamicDataSourceModel;
 import cn.wisefarmer.base.core.common.util.SpringContextUtils;
+import com.alibaba.druid.pool.DruidDataSource;
+import org.jeecg.common.constant.CacheConstant;
 import org.springframework.data.redis.core.RedisTemplate;
+
 import java.util.HashMap;
 import java.util.Map;
 
 
 /**
  * 数据源缓存池
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public class DataSourceCachePool {
     /** 数据源连接池缓存【本地 class缓存 - 不支持分布式】 */

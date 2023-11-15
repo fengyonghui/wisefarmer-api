@@ -6,7 +6,8 @@ import java.util.regex.PatternSyntaxException;
 
 /**
  * 文件上传字符串过滤特殊字符
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public class StrAttackFilter {
 

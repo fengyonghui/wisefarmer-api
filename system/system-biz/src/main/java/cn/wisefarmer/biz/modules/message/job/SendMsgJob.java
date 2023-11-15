@@ -1,13 +1,13 @@
 package cn.wisefarmer.biz.modules.message.job;
 
-import cn.wisefarmer.biz.modules.message.entity.SysMessage;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
-import cn.wisefarmer.local.api.ISysBaseAPI;
 import cn.wisefarmer.base.core.common.util.DateUtils;
+import cn.wisefarmer.biz.modules.message.entity.SysMessage;
 import cn.wisefarmer.biz.modules.message.handle.enums.SendMsgStatusEnum;
 import cn.wisefarmer.biz.modules.message.service.ISysMessageService;
+import cn.wisefarmer.local.api.ISysBaseAPI;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -17,7 +17,8 @@ import java.util.List;
 
 /**
  * 发送消息任务
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 
 @Slf4j
@@ -32,7 +33,7 @@ public class SendMsgJob implements Job {
 	@Override
 	public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 
-		log.info(String.format(" Jeecg-Boot 发送消息任务 SendMsgJob !  时间:" + DateUtils.getTimestamp()));
+		log.info(String.format(" wisefarmer 发送消息任务 SendMsgJob !  时间:" + DateUtils.getTimestamp()));
 
 		// 1.读取消息中心数据，只查询未发送的和发送失败不超过次数的
 		QueryWrapper<SysMessage> queryWrapper = new QueryWrapper<SysMessage>();

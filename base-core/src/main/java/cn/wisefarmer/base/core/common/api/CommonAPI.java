@@ -8,7 +8,8 @@ import java.util.Set;
 
 /**
  * 通用api
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public interface CommonAPI {
 

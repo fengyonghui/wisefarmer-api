@@ -1,13 +1,13 @@
 package cn.wisefarmer.cloud.api;
 
-import cn.wisefarmer.base.core.common.api.dto.message.*;
-import cn.wisefarmer.base.core.common.system.vo.*;
-import com.alibaba.fastjson.JSONObject;
 import cn.wisefarmer.base.core.common.api.CommonAPI;
 import cn.wisefarmer.base.core.common.api.dto.DataLogDTO;
 import cn.wisefarmer.base.core.common.api.dto.OnlineAuthDTO;
+import cn.wisefarmer.base.core.common.api.dto.message.*;
 import cn.wisefarmer.base.core.common.constant.enums.EmailTemplateEnum;
 import cn.wisefarmer.base.core.common.desensitization.annotation.SensitiveDecode;
+import cn.wisefarmer.base.core.common.system.vo.*;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
@@ -17,13 +17,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *
  * 1、cloud接口数量43  local：35 common：9  额外一个特殊queryAllRole一个当两个用
- *  - 相比较local版
- *  - 去掉了一些方法：addLog、getDatabaseType、queryAllDepart、queryAllUser(Wrapper wrapper)、queryAllUser(String[] userIds, int pageNo, int pageSize)
- *  - 修改了一些方法：createLog、sendSysAnnouncement（只保留了一个，其余全部干掉）
+ * - 相比较local版
+ * - 去掉了一些方法：addLog、getDatabaseType、queryAllDepart、queryAllUser(Wrapper wrapper)、queryAllUser(String[] userIds, int pageNo, int pageSize)
+ * - 修改了一些方法：createLog、sendSysAnnouncement（只保留了一个，其余全部干掉）
  * 2、@ConditionalOnMissingClass("org.jeecg.modules.system.service.impl.SysBaseApiImpl")=> 有实现类的时候，不实例化Feign接口
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Component
 //@FeignClient(contextId = "sysBaseRemoteApi", value = ServiceNameConstants.SERVICE_SYSTEM, fallbackFactory = SysBaseAPIFallbackFactory.class)

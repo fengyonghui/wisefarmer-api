@@ -12,8 +12,8 @@ import org.jeecgframework.poi.excel.annotation.Excel;
 
 /**
  * @Description: 部门角色人员信息
- * @Author: jeecg-boot
- * @Date:   2020-02-13
+ * @Author: wisefarmer
+ * @Date: 2020-02-13
  * @Version: V1.0
  */
 @Data

@@ -1,15 +1,15 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.system.entity.SysDepartRole;
-import org.apache.ibatis.annotations.Param;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @Description: 部门角色
- * @Author: jeecg-boot
- * @Date:   2020-02-12
+ * @Author: wisefarmer
+ * @Date: 2020-02-12
  * @Version: V1.0
  */
 public interface SysDepartRoleMapper extends BaseMapper<SysDepartRole> {

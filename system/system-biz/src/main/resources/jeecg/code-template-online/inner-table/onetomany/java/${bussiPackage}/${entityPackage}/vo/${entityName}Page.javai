@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -74,11 +74,11 @@ public class ${entityName}Page {
     private ${po.fieldType} ${po.fieldName};
     </#if>
 	</#list>
-	
+
 	<#list subTables as sub>
 	@ExcelCollection(name="${sub.ftlDescription}")
 	@ApiModelProperty(value = "${sub.ftlDescription}")
 	private List<${sub.entityName}> ${sub.entityName?uncap_first}List;
 	</#list>
-	
+
 }

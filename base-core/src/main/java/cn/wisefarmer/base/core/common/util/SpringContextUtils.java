@@ -1,8 +1,5 @@
 package cn.wisefarmer.base.core.common.util;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.ServiceNameConstants;
 import org.springframework.beans.BeansException;
@@ -12,9 +9,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * @Description: spring上下文工具类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Component
 public class SpringContextUtils implements ApplicationContextAware {

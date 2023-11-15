@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @Description: EncryptedString
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class  EncryptedString {

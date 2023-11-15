@@ -1,15 +1,8 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
-import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppDingtalkServiceImpl;
 import cn.hutool.core.collection.CollectionUtil;
-import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.jeecg.dingtalk.api.core.response.Response;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
 import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
 import cn.wisefarmer.base.core.common.api.vo.Result;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.constant.enums.MessageTypeEnum;
@@ -21,8 +14,15 @@ import cn.wisefarmer.biz.modules.system.entity.SysThirdAccount;
 import cn.wisefarmer.biz.modules.system.entity.SysThirdAppConfig;
 import cn.wisefarmer.biz.modules.system.service.ISysThirdAccountService;
 import cn.wisefarmer.biz.modules.system.service.ISysThirdAppConfigService;
+import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppDingtalkServiceImpl;
 import cn.wisefarmer.biz.modules.system.service.impl.ThirdAppWechatEnterpriseServiceImpl;
 import cn.wisefarmer.biz.modules.system.vo.thirdapp.SyncInfoVo;
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.jeecg.dingtalk.api.core.response.Response;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.SecurityUtils;
+import org.jeecg.common.config.TenantContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,7 +34,8 @@ import java.util.Map;
 
 /**
  * 第三方App对接
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @RestController("thirdAppController")

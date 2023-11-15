@@ -1,5 +1,12 @@
 package cn.wisefarmer.biz.modules.system.controller;
 
+import cn.wisefarmer.base.core.common.api.vo.Result;
+import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
+import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
+import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.base.core.common.util.FillRuleUtil;
+import cn.wisefarmer.biz.modules.system.entity.SysFillRule;
+import cn.wisefarmer.biz.modules.system.service.ISysFillRuleService;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -8,13 +15,6 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.api.vo.Result;
-import cn.wisefarmer.base.core.common.aspect.annotation.AutoLog;
-import cn.wisefarmer.base.core.common.system.base.controller.JeecgController;
-import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
-import cn.wisefarmer.base.core.common.util.FillRuleUtil;
-import cn.wisefarmer.biz.modules.system.entity.SysFillRule;
-import cn.wisefarmer.biz.modules.system.service.ISysFillRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -25,7 +25,7 @@ import java.util.Arrays;
 
 /**
  * @Description: 填值规则
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date: 2019-11-07
  * @Version: V1.0
  */

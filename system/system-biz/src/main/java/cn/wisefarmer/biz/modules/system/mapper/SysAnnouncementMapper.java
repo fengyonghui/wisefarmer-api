@@ -1,18 +1,17 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
+import cn.wisefarmer.biz.modules.system.entity.SysAnnouncement;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.Date;
 import java.util.List;
 
-import cn.wisefarmer.biz.modules.system.entity.SysAnnouncement;
-import org.apache.ibatis.annotations.Param;
-
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
 /**
  * @Description: 系统通告表
- * @Author: jeecg-boot
- * @Date:  2019-01-02
+ * @Author: wisefarmer
+ * @Date: 2019-01-02
  * @Version: V1.0
  */
 public interface SysAnnouncementMapper extends BaseMapper<SysAnnouncement> {

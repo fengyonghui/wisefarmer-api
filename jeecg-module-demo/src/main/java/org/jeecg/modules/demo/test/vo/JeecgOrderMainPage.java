@@ -11,11 +11,11 @@ import lombok.Data;
 
 /**
  * @Description: 一对多示例
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 public class JeecgOrderMainPage {
-	
+
 	/**主键*/
 	private java.lang.String id;
 	/**订单号*/
@@ -39,12 +39,12 @@ public class JeecgOrderMainPage {
 	private java.lang.String updateBy;
 	/**修改时间*/
 	private java.util.Date updateTime;
-	
+
 	@ExcelCollection(name="客户")
 	private List<JeecgOrderCustomer> jeecgOrderCustomerList;
 	@ExcelCollection(name="机票")
 	private List<JeecgOrderTicket> jeecgOrderTicketList;
 
 	private String bpmStatus;
-	
+
 }

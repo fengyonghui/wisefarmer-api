@@ -4,7 +4,7 @@
 //
 ///**
 // * @Description: QueryRuleVo
-// * @author: jeecg-boot
+// * @author: wisefarmer
 // */
 //@Data
 //public class QueryRuleVo {

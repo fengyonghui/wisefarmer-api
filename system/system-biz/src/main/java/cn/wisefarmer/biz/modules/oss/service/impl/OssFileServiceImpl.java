@@ -1,19 +1,19 @@
 package cn.wisefarmer.biz.modules.oss.service.impl;
 
-import cn.wisefarmer.biz.modules.oss.entity.OssFile;
-import cn.wisefarmer.biz.modules.oss.mapper.OssFileMapper;
-import cn.wisefarmer.biz.modules.oss.service.IOssFileService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import cn.wisefarmer.base.core.common.exception.JeecgBootException;
 import cn.wisefarmer.base.core.common.util.CommonUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import cn.wisefarmer.base.core.common.util.oss.OssBootUtil;
+import cn.wisefarmer.biz.modules.oss.entity.OssFile;
+import cn.wisefarmer.biz.modules.oss.mapper.OssFileMapper;
+import cn.wisefarmer.biz.modules.oss.service.IOssFileService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @Description: OSS云存储实现类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Service("ossFileService")
 public class OssFileServiceImpl extends ServiceImpl<OssFileMapper, OssFile> implements IOssFileService {

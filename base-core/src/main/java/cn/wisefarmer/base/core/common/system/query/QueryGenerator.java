@@ -1,5 +1,19 @@
 package cn.wisefarmer.base.core.common.system.query;
 
+import cn.wisefarmer.base.core.common.constant.CommonConstant;
+import cn.wisefarmer.base.core.common.constant.DataBaseConstant;
+import cn.wisefarmer.base.core.common.exception.JeecgBootException;
+import cn.wisefarmer.base.core.common.system.util.JeecgDataAutorUtils;
+import cn.wisefarmer.base.core.common.system.util.JwtUtil;
+import cn.wisefarmer.base.core.common.system.util.SqlConcatUtil;
+import cn.wisefarmer.base.core.common.system.vo.SysPermissionDataRuleModel;
+import cn.wisefarmer.base.core.common.util.*;
+import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.util.NumberUtils;
+
 import java.beans.PropertyDescriptor;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
@@ -11,25 +25,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import cn.wisefarmer.base.core.common.util.*;
-import org.apache.commons.beanutils.PropertyUtils;
-import cn.wisefarmer.base.core.common.constant.CommonConstant;
-import cn.wisefarmer.base.core.common.constant.DataBaseConstant;
-import cn.wisefarmer.base.core.common.exception.JeecgBootException;
-import cn.wisefarmer.base.core.common.system.util.JeecgDataAutorUtils;
-import cn.wisefarmer.base.core.common.system.util.JwtUtil;
-import cn.wisefarmer.base.core.common.system.util.SqlConcatUtil;
-import cn.wisefarmer.base.core.common.system.vo.SysPermissionDataRuleModel;
-import org.springframework.util.NumberUtils;
-
-import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @Description: 查询生成器
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 public class QueryGenerator {
@@ -257,7 +255,7 @@ public class QueryGenerator {
 			}
 			//update-end-author:taoyan date:2022-5-16 for: issues/3676 获取系统用户列表时，使用SQL注入生效
 
-			//update-begin-author:scott date:2022-10-10 for:【jeecg-boot/issues/I5FJU6】doMultiFieldsOrder() 多字段排序方法存在问题
+			//update-begin-author:scott date:2022-10-10 for:【wisefarmer/issues/I5FJU6】doMultiFieldsOrder() 多字段排序方法存在问题
 			//多字段排序方法没有读取 MybatisPlus 注解 @TableField 里 value 的值
 			if (column.contains(",")) {
 				List<String> columnList = Arrays.asList(column.split(","));
@@ -268,7 +266,7 @@ public class QueryGenerator {
 			}else{
 				column = fieldColumnMap.get(column);
 			}
-			//update-end-author:scott date:2022-10-10 for:【jeecg-boot/issues/I5FJU6】doMultiFieldsOrder() 多字段排序方法存在问题
+			//update-end-author:scott date:2022-10-10 for:【wisefarmer/issues/I5FJU6】doMultiFieldsOrder() 多字段排序方法存在问题
 
 			//SQL注入check
 			SqlInjectionUtil.filterContent(column);

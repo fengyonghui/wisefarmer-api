@@ -1,22 +1,22 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.system.entity.SysTenant;
+import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUserTenant;
 import cn.wisefarmer.biz.modules.system.vo.SysUserTenantVo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import cn.wisefarmer.biz.modules.system.entity.SysUser;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * @Description: sys_user_tenant_relation
- * @Author: jeecg-boot
- * @Date:   2022-12-23
+ * @Author: wisefarmer
+ * @Date: 2022-12-23
  * @Version: V1.0
  */
 public interface SysUserTenantMapper extends BaseMapper<SysUserTenant> {

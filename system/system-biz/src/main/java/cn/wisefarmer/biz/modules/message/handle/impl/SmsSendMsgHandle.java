@@ -1,11 +1,11 @@
 package cn.wisefarmer.biz.modules.message.handle.impl;
 
-import lombok.extern.slf4j.Slf4j;
 import cn.wisefarmer.biz.modules.message.handle.ISendMsgHandle;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Description: 短信发送
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Slf4j
 public class SmsSendMsgHandle implements ISendMsgHandle {

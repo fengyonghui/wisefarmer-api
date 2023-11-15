@@ -7,15 +7,14 @@
 JEECG BOOT Low Code Development Platform
 ===============
 
-当前最新版本： 3.6.0（发布日期：2023-10-23） 
+当前最新版本： 3.6.0（发布日期：2023-10-23）
 
-
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/jeecg-boot/blob/master/LICENSE)
+[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/wisefarmer/blob/master/LICENSE)
 [![](https://img.shields.io/badge/Author-guojusoft-orange.svg)](http://www.jeecg.com)
 [![](https://img.shields.io/badge/Blog-blog-blue.svg)](https://jeecg.blog.csdn.net)
-[![](https://img.shields.io/badge/version-3.6.0-brightgreen.svg)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeecg-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
+[![](https://img.shields.io/badge/version-3.6.0-brightgreen.svg)](https://github.com/zhangdaiscott/wisefarmer)
+[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/wisefarmer.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/wisefarmer)
+[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/wisefarmer.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/wisefarmer)
 
 
 
@@ -37,7 +36,7 @@ JEECG Business process: Using workflow to implement and extend the task interfac
 Technical support
 -----------------------------------
 
-Problems or bugs in use can be found in [Making on the Issues](https://github.com/jeecgboot/jeecg-boot/issues/new)
+Problems or bugs in use can be found in [Making on the Issues](https://github.com/jeecgboot/wisefarmer/issues/new)
 
 Official Support: http://jeecg.com/doc/help
 
@@ -46,19 +45,19 @@ Download the source code
 -----------------------------------
 项目源码
 -----------------------------------
-| Source |Front-end source (Vue3 version) | The background source |
-|-|-|-|
-| Github | [jeecgboot-vue3](https://github.com/jeecgboot/jeecgboot-vue3)  | [jeecg-boot](https://github.com/jeecgboot/jeecg-boot) |
-| Gitee | [jeecgboot-vue3](https://gitee.com/jeecg/jeecgboot-vue3)    | [jeecg-boot](https://gitee.com/jeecg/jeecg-boot) |
+| Source |Front-end source (Vue3 version) | The background source | |-|-|-| | Github
+| [jeecgboot-vue3](https://github.com/jeecgboot/jeecgboot-vue3)  | [wisefarmer](https://github.com/jeecgboot/wisefarmer)
+| | Gitee | [jeecgboot-vue3](https://gitee.com/jeecg/jeecgboot-vue3)
+| [wisefarmer](https://gitee.com/jeecg/wisefarmer) |
 
 ##### Project description
 
 | Project                | description                     | 
 |--------------------|------------------------|
-| `jeecg-boot`    | SpringBoot background source code (support microservices)      |
+| `wisefarmer`    | SpringBoot background source code (support microservices)      |
 | `jeecgboot-vue3` | Vue3+TS new front-end source code|
 | `jeecg-uniapp` | [APP development framework, a code multi terminal adaptation, and support APP, small program, H5](https://github.com/jeecgboot/jeecg-uniapp) |
-| `jeecg-boot-starter` | [Stater relies on the project to be maintained separately. Click Download](https://gitee.com/jeecg/jeecg-boot-starter) |
+| `wisefarmer-starter` | [Stater relies on the project to be maintained separately. Click Download](https://gitee.com/jeecg/wisefarmer-starter) |
 | `More` | [Download more source code](http://jeecg.com/download) |
 
 
@@ -67,7 +66,10 @@ Download the source code
 
 For the project
 -----------------------------------
-Jeecg-Boot low code development platform can be applied in the development of any J2EE project, especially for SAAS projects, enterprise information management system (MIS), internal office system (OA), enterprise resource planning system (ERP), customer relationship management system (CRM), etc. Its semi-intelligent manual Merge development method, Can significantly improve the development efficiency of more than 70%, greatly reduce the development cost.
+wisefarmer low code development platform can be applied in the development of any J2EE project, especially for SAAS
+projects, enterprise information management system (MIS), internal office system (OA), enterprise resource planning
+system (ERP), customer relationship management system (CRM), etc. Its semi-intelligent manual Merge development method,
+Can significantly improve the development efficiency of more than 70%, greatly reduce the development cost.
 
 
 
@@ -98,17 +100,18 @@ Technical documentation
 Star charts
 -----------------------------------
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jeecgboot/jeecg-boot&type=Date)](https://star-history.com/#jeecgboot/jeecg-boot)
+[![Star History Chart](https://api.star-history.com/svg?repos=jeecgboot/wisefarmer&type=Date)](https://star-history.com/#jeecgboot/wisefarmer)
 
 
 
 
 Background directory Structure
 -----------------------------------
+
 ```
 project structure
-├─jeecg-boot-parent
-│  ├─jeecg-boot-base-core
+├─wisefarmer-parent
+│  ├─wisefarmer-base-core
 │  ├─jeecg-module-demo    
 │  ├─jeecg-module-system 
 │  │  ├─jeecg-system-biz   
@@ -280,7 +283,8 @@ Technical Architecture:
 ![微服务架构图](https://jeecgos.oss-cn-beijing.aliyuncs.com/files/jeecgboot_springcloud2022.png "在这里输入图片标题")
 
 ### Jeecg Boot product functionality blueprint
-![功能蓝图](https://jeecgos.oss-cn-beijing.aliyuncs.com/upload/test/Jeecg-Boot-lantu202005_1590912449914.jpg "在这里输入图片标题")
+
+![功能蓝图](https://jeecgos.oss-cn-beijing.aliyuncs.com/upload/test/wisefarmer-lantu202005_1590912449914.jpg "在这里输入图片标题")
 
 
 

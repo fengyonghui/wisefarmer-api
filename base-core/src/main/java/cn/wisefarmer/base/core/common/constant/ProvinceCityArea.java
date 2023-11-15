@@ -1,17 +1,17 @@
 package cn.wisefarmer.base.core.common.constant;
 
-import com.alibaba.fastjson.JSONObject;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * @Description: 省市区
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Component("pca")
 public class ProvinceCityArea {

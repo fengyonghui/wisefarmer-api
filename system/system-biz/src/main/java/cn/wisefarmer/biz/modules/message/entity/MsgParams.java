@@ -1,15 +1,16 @@
 package cn.wisefarmer.biz.modules.message.entity;
 
-import java.io.Serializable;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 发送消息实体
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
-public class MsgParams implements Serializable  {
+public class MsgParams implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	/**

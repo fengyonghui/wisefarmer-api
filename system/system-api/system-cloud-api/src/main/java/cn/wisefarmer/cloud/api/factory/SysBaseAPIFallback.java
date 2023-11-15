@@ -1,14 +1,14 @@
 package cn.wisefarmer.cloud.api.factory;
 
+import cn.wisefarmer.base.core.common.api.dto.DataLogDTO;
+import cn.wisefarmer.base.core.common.api.dto.OnlineAuthDTO;
 import cn.wisefarmer.base.core.common.api.dto.message.*;
+import cn.wisefarmer.base.core.common.constant.enums.EmailTemplateEnum;
 import cn.wisefarmer.base.core.common.system.vo.*;
+import cn.wisefarmer.cloud.api.ISysBaseAPI;
 import com.alibaba.fastjson.JSONObject;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import cn.wisefarmer.base.core.common.api.dto.DataLogDTO;
-import cn.wisefarmer.base.core.common.api.dto.OnlineAuthDTO;
-import cn.wisefarmer.base.core.common.constant.enums.EmailTemplateEnum;
-import cn.wisefarmer.cloud.api.ISysBaseAPI;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,8 @@ import java.util.Set;
 
 /**
  * 进入fallback的方法 检查是否token未设置
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 public class SysBaseAPIFallback implements ISysBaseAPI {

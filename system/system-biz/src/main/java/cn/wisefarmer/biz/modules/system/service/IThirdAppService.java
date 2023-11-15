@@ -1,13 +1,14 @@
 package cn.wisefarmer.biz.modules.system.service;
 
-import cn.wisefarmer.biz.modules.system.vo.thirdapp.SyncInfoVo;
 import cn.wisefarmer.base.core.common.api.dto.message.MessageDTO;
+import cn.wisefarmer.biz.modules.system.vo.thirdapp.SyncInfoVo;
 
 import java.util.List;
 
 /**
  * 第三方App对接
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 public interface IThirdAppService {
 

@@ -1,23 +1,22 @@
 package cn.wisefarmer.base.core.common.system.vo;
 
-import java.io.Serializable;
-
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 /**
  * @Description: 字典类
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DictModel implements Serializable{
+public class DictModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	public DictModel() {

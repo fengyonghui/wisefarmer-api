@@ -1,28 +1,26 @@
 package cn.wisefarmer.base.core.config.mybatis;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import cn.hutool.core.util.ObjectUtil;
 import cn.wisefarmer.base.core.common.constant.CommonConstant;
 import cn.wisefarmer.base.core.common.constant.TenantConstant;
-import cn.hutool.core.util.ObjectUtil;
-import com.baomidou.mybatisplus.extension.plugins.inner.DynamicTableNameInnerInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
-import org.jeecg.common.config.TenantContext;
 import cn.wisefarmer.base.core.common.util.SpringContextUtils;
 import cn.wisefarmer.base.core.common.util.TokenUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.handler.TenantLineHandler;
+import com.baomidou.mybatisplus.extension.plugins.inner.DynamicTableNameInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor;
+import net.sf.jsqlparser.expression.Expression;
+import net.sf.jsqlparser.expression.LongValue;
+import org.jeecg.common.config.TenantContext;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.handler.TenantLineHandler;
-import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor;
-
-import net.sf.jsqlparser.expression.Expression;
-import net.sf.jsqlparser.expression.LongValue;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 单数据源配置（jeecg.datasource.open = false时生效）
@@ -30,7 +28,7 @@ import net.sf.jsqlparser.expression.LongValue;
  *
  */
 @Configuration
-@MapperScan(value={"cn.wisefarmer.**.mapper*"})
+@MapperScan(value = {"cn.wisefarmer.biz.modules.**.mapper*", "cn.wisefarmer.base.core.**.mapper"})
 public class MybatisPlusSaasConfig {
 
     /**
@@ -112,7 +110,7 @@ public class MybatisPlusSaasConfig {
         interceptor.addInnerInterceptor(dynamicTableNameInnerInterceptor());
         //update-end-author:zyf date:20220425 for:【VUEN-606】注入动态表名适配拦截器解决多表名问题
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
-        //【jeecg-boot/issues/3847】增加@Version乐观锁支持
+        //【wisefarmer/issues/3847】增加@Version乐观锁支持
         interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
         return interceptor;
     }

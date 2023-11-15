@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.stereotype.Component;
 /**
  * @Description: SysBaseAPIFallbackFactory
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Component
 public class SysBaseAPIFallbackFactory implements FallbackFactory<ISysBaseAPI> {

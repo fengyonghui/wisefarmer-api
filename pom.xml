@@ -1,15 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jeecgframework.boot</groupId>
-  <artifactId>jeecg-boot-parent</artifactId>
-  <version>3.6.0</version>
-  <packaging>pom</packaging>
-  <name>JEECG BOOT ${project.version} </name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.wisefarmer.boot</groupId>
+	<artifactId>wisefarmer-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>wise farmer ${project.version}</name>
 
 	<developers>
 		<developer>
-			<name>北京国炬信息技术有限公司</name>
-			<email>jeecgos@163.com</email>
+			<name>北京智慧农夫信息技术有限公司</name>
+			<email>1332326825@qq.com</email>
 		</developer>
 	</developers>
 
@@ -27,6 +29,7 @@
 	</parent>
 
 	<properties>
+		<wisefarmer.version>1.0.0</wisefarmer.version>
 		<jeecgboot.version>3.6.0</jeecgboot.version>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -169,9 +172,9 @@
 
 			<!-- system 模块-->
 			<dependency>
-				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-system-biz</artifactId>
-				<version>${jeecgboot.version}</version>
+				<groupId>cn.wisefarmer.boot</groupId>
+				<artifactId>system-biz</artifactId>
+				<version>${wisefarmer.version}</version>
 			</dependency>
 
 			<!-- jeecg tools -->
@@ -182,29 +185,29 @@
 			</dependency>
 			<!-- jeecg core -->
 			<dependency>
-				<groupId>org.jeecgframework.boot</groupId>
+				<groupId>cn.wisefarmer.boot</groupId>
 				<artifactId>base-core</artifactId>
-				<version>${jeecgboot.version}</version>
+				<version>${wisefarmer.version}</version>
 			</dependency>
 			<!-- system 单体 api -->
 			<dependency>
-				<groupId>org.jeecgframework.boot</groupId>
+				<groupId>cn.wisefarmer.boot</groupId>
 				<artifactId>system-local-api</artifactId>
-				<version>${jeecgboot.version}</version>
+				<version>${wisefarmer.version}</version>
 			</dependency>
 			<!-- system 微服务 api -->
 			<dependency>
-				<groupId>org.jeecgframework.boot</groupId>
+				<groupId>cn.wisefarmer.boot</groupId>
 				<artifactId>system-cloud-api</artifactId>
-				<version>${jeecgboot.version}</version>
+				<version>${wisefarmer.version}</version>
 			</dependency>
 
-            <!--微服务启动依赖-->
-<!--            <dependency>-->
-<!--                <groupId>org.jeecgframework.boot</groupId>-->
-<!--                <artifactId>jeecg-boot-starter-cloud</artifactId>-->
-<!--                <version>${jeecgboot.version}</version>-->
-<!--            </dependency>-->
+			<!--微服务启动依赖-->
+			<!--            <dependency>-->
+			<!--                <groupId>cn.wisefarmer.boot</groupId>-->
+			<!--                <artifactId>wisefarmer-starter-cloud</artifactId>-->
+			<!--                <version>${wisefarmer.version}</version>-->
+			<!--            </dependency>-->
 			<!--xxl-job定时任务-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
@@ -241,7 +244,7 @@
 				</exclusions>
 			</dependency>
 <!--			<dependency>-->
-<!--				<groupId>org.jeecgframework.boot</groupId>-->
+			<!--				<groupId>cn.wisefarmer.boot</groupId>-->
 <!--				<artifactId>hibernate-re</artifactId>-->
 <!--				<version>3.5.3</version>-->
 <!--			</dependency>-->
@@ -441,7 +444,7 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-addr>wisefarmer-nacos:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
 				<config.namespace></config.namespace>
 				<!--Nacos配置分组名称-->
@@ -457,7 +460,7 @@
 			<id>dev</id>
 			<properties>
 				<profile.name>dev</profile.name>
-				<config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-addr>wisefarmer-nacos:8848</config.server-addr>
 				<config.namespace>ac14ab82-51f8-4f0c-aa5b-25fb8384bfb6</config.namespace>
 				<config.group>JEECGDEV_GROUP</config.group>
 				<config.username>nacos</config.username>
@@ -471,7 +474,7 @@
                 <!--当前环境-->
                 <profile.name>test</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-addr>wisefarmer-nacos:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
 				<config.namespace></config.namespace>
 				<!--Nacos配置分组名称-->
@@ -489,7 +492,7 @@
                 <!--当前环境-->
                 <profile.name>prod</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-addr>wisefarmer-nacos:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
 				<config.namespace></config.namespace>
 				<!--Nacos配置分组名称-->

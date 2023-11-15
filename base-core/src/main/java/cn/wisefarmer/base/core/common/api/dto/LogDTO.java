@@ -1,13 +1,16 @@
 package cn.wisefarmer.base.core.common.api.dto;
-import lombok.Data;
+
 import cn.wisefarmer.base.core.common.system.vo.LoginUser;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 日志对象
  * cloud api 用到的接口传输对象
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
 public class LogDTO implements Serializable {

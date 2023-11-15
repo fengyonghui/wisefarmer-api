@@ -1,26 +1,25 @@
 package cn.wisefarmer.biz.modules.oss.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
-import cn.wisefarmer.biz.modules.oss.entity.OssFile;
-import cn.wisefarmer.biz.modules.oss.service.IOssFileService;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import cn.wisefarmer.base.core.common.api.vo.Result;
 import cn.wisefarmer.base.core.common.system.query.QueryGenerator;
+import cn.wisefarmer.biz.modules.oss.entity.OssFile;
+import cn.wisefarmer.biz.modules.oss.service.IOssFileService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
-import lombok.extern.slf4j.Slf4j;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 云存储示例 DEMO
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Slf4j
 @Controller

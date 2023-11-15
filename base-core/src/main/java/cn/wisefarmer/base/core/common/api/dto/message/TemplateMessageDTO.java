@@ -1,12 +1,14 @@
 package cn.wisefarmer.base.core.common.api.dto.message;
 
 import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Map;
 
 /**
  * 模板消息
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Data
 public class TemplateMessageDTO extends TemplateDTO implements Serializable {

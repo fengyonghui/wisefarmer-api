@@ -1,21 +1,22 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
-import java.io.Serializable;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.jeecgframework.poi.excel.annotation.Excel;
-import java.util.Date;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import org.jeecgframework.poi.excel.annotation.Excel;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @Description: 用户职位关系表
- * @Author: jeecg-boot
- * @Date:   2023-02-14
+ * @Author: wisefarmer
+ * @Date: 2023-02-14
  * @Version: V1.0
  */
 @ApiModel(value="sys_user_position对象", description="用户职位关系表")

@@ -7,6 +7,8 @@ import cn.wisefarmer.base.core.common.constant.SymbolConstant;
 import cn.wisefarmer.base.core.common.system.query.QueryRuleEnum;
 import cn.wisefarmer.base.core.common.system.util.JeecgDataAutorUtils;
 import cn.wisefarmer.base.core.common.system.util.JwtUtil;
+import cn.wisefarmer.base.core.common.system.vo.SysPermissionDataRuleModel;
+import cn.wisefarmer.base.core.common.system.vo.SysUserCacheInfo;
 import cn.wisefarmer.base.core.common.util.SpringContextUtils;
 import cn.wisefarmer.base.core.common.util.oConvertUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +17,6 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
-import cn.wisefarmer.base.core.common.system.vo.SysPermissionDataRuleModel;
-import cn.wisefarmer.base.core.common.system.vo.SysUserCacheInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
@@ -27,10 +27,11 @@ import java.util.List;
 
 /**
  * 数据权限切面处理类
- *  当被请求的方法有注解PermissionData时,会在往当前request中写入数据权限信息
+ * 当被请求的方法有注解PermissionData时,会在往当前request中写入数据权限信息
+ *
  * @Date 2019年4月10日
  * @Version: 1.0
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 @Aspect
 @Component

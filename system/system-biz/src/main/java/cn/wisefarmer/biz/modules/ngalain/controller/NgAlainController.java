@@ -46,7 +46,7 @@
 //        j.put("user", userObjcet);
 //        j.put("menu",ngAlainService.getMenu(user.getUsername()));
 //        JSONObject app = new JSONObject();
-//        app.put("name", "jeecg-boot-angular");
+//        app.put("name", "wisefarmer-angular");
 //        app.put("description", "jeecg+ng-alain整合版本");
 //        j.put("app", app);
 //        return j;

@@ -42,7 +42,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 
  /**
  * @Description: ${tableVo.ftlDescription}
- * @Author: jeecg-boot
+ * @Author: wisefarmer
  * @Date:   ${.now?string["yyyy-MM-dd"]}
  * @Version: V1.0
  */
@@ -160,7 +160,7 @@ public class ${entityName}Controller extends JeecgController<${entityName}, I${e
         return super.importExcel(request, response, ${entityName}.class);
     }
 	/*---------------------------------主表处理-end-------------------------------------*/
-	
+
 	<#list subTables as sub>
 
     /*--------------------------------子表处理-${sub.ftlDescription}-begin----------------------------------------------*/

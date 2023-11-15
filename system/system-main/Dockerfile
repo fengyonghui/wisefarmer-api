@@ -4,9 +4,9 @@ MAINTAINER jeecgos@163.com
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-#RUN mkdir -p /jeecg-boot/config/jeecg/
+#RUN mkdir -p /wisefarmer/config/jeecg/
 
-WORKDIR /jeecg-boot
+WORKDIR /wisefarmer
 
 EXPOSE 8080
 

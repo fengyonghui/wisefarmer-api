@@ -7,10 +7,11 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
-* 优雅的http请求方式RestTemplate
-* @author: jeecg-boot
-* @Return:
-*/
+ * 优雅的http请求方式RestTemplate
+ *
+ * @author: wisefarmer
+ * @Return:
+ */
 @Configuration
 public class RestTemplateConfig {
 

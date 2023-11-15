@@ -1,16 +1,15 @@
 package cn.wisefarmer.biz.modules.quartz.mapper;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.quartz.entity.QuartzJob;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import java.util.List;
 
 /**
  * @Description: 定时任务在线管理
- * @Author: jeecg-boot
- * @Date:  2019-01-02
+ * @Author: wisefarmer
+ * @Date: 2019-01-02
  * @Version: V1.0
  */
 public interface QuartzJobMapper extends BaseMapper<QuartzJob> {

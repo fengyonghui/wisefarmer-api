@@ -8,8 +8,8 @@ import java.util.List;
 
 /**
  * @Description: 消息模板
- * @Author: jeecg-boot
- * @Date:  2019-04-09
+ * @Author: wisefarmer
+ * @Date: 2019-04-09
  * @Version: V1.0
  */
 public interface SysMessageTemplateMapper extends BaseMapper<SysMessageTemplate> {

@@ -1,9 +1,9 @@
 package cn.wisefarmer.base.core.config.sign.interceptor;
 
 import cn.wisefarmer.base.core.config.JeecgBaseConfig;
+import cn.wisefarmer.base.core.config.filter.RequestBodyReserveFilter;
 import org.apache.commons.lang3.StringUtils;
 import org.jeecg.common.util.PathMatcherUtil;
-import cn.wisefarmer.base.core.config.filter.RequestBodyReserveFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,8 @@ import javax.annotation.Resource;
 
 /**
  * 签名 拦截器配置
- * @author: jeecg-boot
+ *
+ * @author: wisefarmer
  */
 @Configuration
 public class SignAuthConfiguration implements WebMvcConfigurer {

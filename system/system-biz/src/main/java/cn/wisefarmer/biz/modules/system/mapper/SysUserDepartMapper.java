@@ -1,18 +1,18 @@
 package cn.wisefarmer.biz.modules.system.mapper;
 
-import java.util.List;
-
 import cn.wisefarmer.biz.modules.system.entity.SysUser;
 import cn.wisefarmer.biz.modules.system.entity.SysUserDepart;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * @Description: 用户部门mapper接口
- * @author: jeecg-boot
+ * @author: wisefarmer
  */
 public interface SysUserDepartMapper extends BaseMapper<SysUserDepart>{
 

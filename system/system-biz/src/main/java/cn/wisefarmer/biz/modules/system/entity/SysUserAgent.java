@@ -1,19 +1,19 @@
 package cn.wisefarmer.biz.modules.system.entity;
 
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.Data;
 import org.jeecgframework.poi.excel.annotation.Excel;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.io.Serializable;
 
 /**
  * @Description: 用户代理人设置
- * @Author: jeecg-boot
- * @Date:  2019-04-17
+ * @Author: wisefarmer
+ * @Date: 2019-04-17
  * @Version: V1.0
  */
 @Data
